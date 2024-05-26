@@ -2,3 +2,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+$main-font:"DM Sans", sans-serif;
+$yellow: #FEFB64;
+$orange:#FF6624;
+$primary-green: #72BB53;
+$secondary-green: #E2EE79;
+
+@mixin font-style {
+ font-family: $main-font;
+ font-weight: 900;
+ font-size: larger;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: $orange;
+        padding: 20px;
+        div {
+            a{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+           }
+          }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                padding: 20px;
+                text-decoration: none;
+                align-content: center;
+                li{
+                    @include font-style();
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

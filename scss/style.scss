@@ -260,3 +260,72 @@ footer {
     }
    }
 }
+#ordenes {
+    @include grid-menu();
+    #hamburguesas{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+    #pastas{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+    #pizzas{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+    #vinos{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+    #cervezas{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+    #cocteles{
+        @include flex-column();
+        .menu-catalogo{
+            @include grid-layout();
+            .menu-card{
+                img{
+                    width: 100px;
+                }
+            }
+        } 
+    }
+}

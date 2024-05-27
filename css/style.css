@@ -272,4 +272,87 @@ footer .redes-credito div .fa-brands {
   color: #FF6624;
 }
 
+#ordenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+}
+#ordenes #hamburguesas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #hamburguesas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #hamburguesas .menu-catalogo .menu-card img {
+  width: 100px;
+}
+#ordenes #pastas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #pastas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #pastas .menu-catalogo .menu-card img {
+  width: 100px;
+}
+#ordenes #pizzas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #pizzas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #pizzas .menu-catalogo .menu-card img {
+  width: 100px;
+}
+#ordenes #vinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #vinos .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #vinos .menu-catalogo .menu-card img {
+  width: 100px;
+}
+#ordenes #cervezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #cervezas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #cervezas .menu-catalogo .menu-card img {
+  width: 100px;
+}
+#ordenes #cocteles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ordenes #cocteles .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#ordenes #cocteles .menu-catalogo .menu-card img {
+  width: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */

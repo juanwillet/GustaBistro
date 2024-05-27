@@ -188,4 +188,47 @@ header nav ul a li {
   color: #FF6624;
 }
 
+#nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  background-color: #72BB53;
+}
+#nosotros .nosotros-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  align-items: center;
+}
+#nosotros .nosotros-card h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FEFB64;
+  padding: 10px;
+}
+#nosotros .nosotros-card p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #4DD7FA;
+  padding: 10px;
+}
+#nosotros .nosotros-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  row-gap: 10px;
+}
+#nosotros .nosotros-content img {
+  width: 900px;
+  border-radius: 20px;
+}
+#nosotros .nosotros-content iframe {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

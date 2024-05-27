@@ -186,3 +186,39 @@ header {
     }
   }
 }
+#nosotros{
+    @include grid-menu();
+    background-color: $primary-green;
+    .nosotros-card {
+        @include flex-column();
+        padding: 30px;
+        align-items: center;
+        h2{
+            @include font-style();
+            color: $yellow;
+            padding: 10px;
+        }
+        p {
+            @include font-style();
+            color: $blue;
+            padding: 10px; 
+        }
+    }
+    .nosotros-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        row-gap: 10px;
+            img{
+                width: 900px;
+                border-radius: 20px;
+            }
+        
+        iframe {
+            width: 400px;
+            height: 500px;
+            border-radius: 20px; 
+        }
+    }
+}

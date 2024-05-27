@@ -189,10 +189,13 @@ header {
 #nosotros{
     @include grid-menu();
     background-color: $primary-green;
+    padding: 30px;
     .nosotros-card {
         @include flex-column();
         padding: 30px;
         align-items: center;
+        background-color:#fefb6497;
+        border-radius: 30px;
         h2{
             @include font-style();
             color: $yellow;
@@ -221,4 +224,39 @@ header {
             border-radius: 20px; 
         }
     }
+}
+
+footer {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+   background-color: $secondary-green;
+   .gusta-bistro {
+    @include flex-column();
+    padding: 50px;
+    img {
+        width: 100px;
+        
+    }
+    p{
+        font-style: $main-font;
+        font-size: large;
+        font-weight: 900;
+        color: $orange;
+        padding:20px;
+    }
+   } 
+   .redes-credito{
+    @include flex-column();
+    justify-content: space-around;
+    div{
+        display: flex;
+        justify-content: space-between;
+        .fa-brands{
+            font-size: 50px;
+            padding: 20px;
+            color: $orange;
+        }
+    }
+   }
 }

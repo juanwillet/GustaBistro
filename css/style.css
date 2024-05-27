@@ -192,6 +192,7 @@ header nav ul a li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
   background-color: #72BB53;
+  padding: 30px;
 }
 #nosotros .nosotros-card {
   display: flex;
@@ -199,6 +200,8 @@ header nav ul a li {
   align-items: center;
   padding: 30px;
   align-items: center;
+  background-color: rgba(254, 251, 100, 0.5921568627);
+  border-radius: 30px;
 }
 #nosotros .nosotros-card h2 {
   font-family: "DM Sans", sans-serif;
@@ -229,6 +232,44 @@ header nav ul a li {
   width: 400px;
   height: 500px;
   border-radius: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #E2EE79;
+}
+footer .gusta-bistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+footer .gusta-bistro img {
+  width: 100px;
+}
+footer .gusta-bistro p {
+  font-style: "DM Sans", sans-serif;
+  font-size: large;
+  font-weight: 900;
+  color: #FF6624;
+  padding: 20px;
+}
+footer .redes-credito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .redes-credito div {
+  display: flex;
+  justify-content: space-between;
+}
+footer .redes-credito div .fa-brands {
+  font-size: 50px;
+  padding: 20px;
+  color: #FF6624;
 }
 
 /*# sourceMappingURL=style.css.map */

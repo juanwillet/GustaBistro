@@ -32,8 +32,160 @@ header nav ul a {
 header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
-  font-size: larger;
+  font-size: xx-large;
   color: #FEFB64;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  padding: 50px;
+  background-color: #FEFB64;
+}
+#menu .menu-layout .layout-titulo {
+  padding: 80px;
+}
+#menu .menu-layout .layout-titulo div h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#menu .menu-layout .layout-titulo div h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#menu .menu-layout .layout-titulo div h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #4DD7FA;
+}
+#menu .menu-layout .layout-titulo div .fa-solid {
+  font-size: 50px;
+  color: #72BB53;
+}
+#menu .menu-layout .layout-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#menu .menu-layout .layout-box .box {
+  padding: 50px;
+}
+#menu .menu-layout .layout-box .box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menu .menu-layout .layout-box .box div button {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: #FEFB64;
+  background-color: #FF6624;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+  padding: 10px;
+}
+#menu .menu-layout .layout-box .box div h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#menu .menu-layout .layout-box .box div h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #4DD7FA;
+}
+#menu .menu-layout .layout-box .box div .fa-solid {
+  font-size: 50px;
+  color: #72BB53;
+}
+#menu .menu-layout .layout-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#licores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  padding: 50px;
+  background-color: #E2EE79;
+}
+#licores .licores-layout .layout-titulo-licores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px;
+}
+#licores .licores-layout .layout-titulo-licores div h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#licores .licores-layout .layout-titulo-licores div h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#licores .licores-layout .layout-titulo-licores div h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #4DD7FA;
+}
+#licores .licores-layout .layout-titulo-licores div .fa-solid {
+  font-size: 50px;
+  color: #FF6624;
+}
+#licores .licores-layout .layout-box-licores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+#licores .licores-layout .layout-box-licores .box-licores {
+  padding: 50px;
+}
+#licores .licores-layout .layout-box-licores .box-licores div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#licores .licores-layout .layout-box-licores .box-licores div button {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: #FEFB64;
+  background-color: #FF6624;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+  padding: 10px;
+}
+#licores .licores-layout .layout-box-licores .box-licores div h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #FF6624;
+}
+#licores .licores-layout .layout-box-licores .box-licores div h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  color: #4DD7FA;
+}
+#licores .licores-layout .layout-box-licores .box-licores div .fa-solid {
+  font-size: 50px;
+  color: #FF6624;
 }
 
 /*# sourceMappingURL=style.css.map */

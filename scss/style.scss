@@ -5,13 +5,28 @@
 $main-font:"DM Sans", sans-serif;
 $yellow: #FEFB64;
 $orange:#FF6624;
+$blue: #4DD7FA;
 $primary-green: #72BB53;
 $secondary-green: #E2EE79;
 
 @mixin font-style {
  font-family: $main-font;
  font-weight: 900;
- font-size: larger;
+ font-size:xx-large;
+}
+@mixin grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));   
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
 }
 header {
     position: sticky;
@@ -45,4 +60,129 @@ header {
             }
         }
     }
+}
+#menu {
+    @include grid-menu; 
+    padding: 50px;
+    background-color: $yellow;
+.menu-layout{
+    .layout-titulo{
+        padding: 80px;
+        div {
+            h1 {
+                @include font-style();
+                color: $orange;
+            }
+            h2 {
+                @include font-style();
+                color: $orange;
+            }
+            h3 {
+                @include font-style();
+                color: $blue;
+            }
+            .fa-solid {
+              font-size: 50px;
+              color: $primary-green;
+            }
+        }
+    }
+    .layout-box {
+        @include grid-layout;
+      .box{
+        padding: 50px;
+        div {
+        @include flex-column();
+        button {
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            color: $yellow;
+            background-color: $orange;
+            font-family: $main-font;
+            font-weight: 1000;
+            font-size: larger;
+            padding: 10px;
+        }
+        h2 {
+            @include font-style();
+            color: $orange;
+        }
+        h3 {
+            @include font-style();
+            color: $blue;
+        }
+        .fa-solid {
+            font-size: 50px;
+            color: $primary-green;
+        }
+        }
+      } 
+    }
+    .layout-titulo{    
+    @include flex-column()     
+    }
+  }
+}
+
+#licores {
+    @include grid-menu; 
+    padding: 50px;
+    background-color: $secondary-green;
+.licores-layout{
+    .layout-titulo-licores{
+        @include flex-column();
+        padding: 80px;
+        div {
+            h1 {
+                @include font-style();
+                color: $orange;
+            }
+            h2 {
+                @include font-style();
+                color: $orange;
+            }
+            h3 {
+                @include font-style();
+                color: $blue;
+            }
+            .fa-solid {
+              font-size: 50px;
+              color: $orange;
+            }
+        }
+    }
+    .layout-box-licores {
+        @include grid-layout;
+      .box-licores{
+        padding: 50px;
+        div {
+        @include flex-column();
+        button {
+            outline: none;
+            border: none;
+            border-radius: 15px;
+            color: $yellow;
+            background-color: $orange;
+            font-family: $main-font;
+            font-weight: 1000;
+            font-size: larger;
+            padding: 10px;
+        }
+        h2 {
+            @include font-style();
+            color: $orange;
+        }
+        h3 {
+            @include font-style();
+            color: $blue;
+        }
+        .fa-solid {
+            font-size: 50px;
+            color: $orange;
+        }
+        }
+      } 
+    }
+  }
 }

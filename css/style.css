@@ -33,6 +33,7 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
 }
 
@@ -49,23 +50,27 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #menu .menu-layout .layout-titulo div h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #menu .menu-layout .layout-titulo div h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #4DD7FA;
 }
 #menu .menu-layout .layout-titulo div .fa-solid {
   font-size: 50px;
   color: #72BB53;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 #menu .menu-layout .layout-box {
   display: grid;
@@ -80,6 +85,15 @@ header nav ul a li {
   flex-direction: column;
   align-items: center;
 }
+#menu .menu-layout .layout-box .box div ul li {
+  list-style: none;
+  color: #FF6624;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  font-size: x-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  padding: 20px;
+}
 #menu .menu-layout .layout-box .box div button {
   outline: none;
   border: none;
@@ -89,23 +103,27 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 1000;
   font-size: larger;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 10px;
 }
 #menu .menu-layout .layout-box .box div h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #menu .menu-layout .layout-box .box div h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #4DD7FA;
 }
 #menu .menu-layout .layout-box .box div .fa-solid {
   font-size: 50px;
   color: #72BB53;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 #menu .menu-layout .layout-titulo {
   display: flex;
@@ -129,23 +147,27 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #licores .licores-layout .layout-titulo-licores div h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #licores .licores-layout .layout-titulo-licores div h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #4DD7FA;
 }
 #licores .licores-layout .layout-titulo-licores div .fa-solid {
   font-size: 50px;
   color: #FF6624;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 #licores .licores-layout .layout-box-licores {
   display: grid;
@@ -160,6 +182,15 @@ header nav ul a li {
   flex-direction: column;
   align-items: center;
 }
+#licores .licores-layout .layout-box-licores .box-licores div ul li {
+  list-style: none;
+  color: #4DD7FA;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  font-size: x-large;
+  padding: 20px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+}
 #licores .licores-layout .layout-box-licores .box-licores div button {
   outline: none;
   border: none;
@@ -169,23 +200,27 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 1000;
   font-size: larger;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 10px;
 }
 #licores .licores-layout .layout-box-licores .box-licores div h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
 }
 #licores .licores-layout .layout-box-licores .box-licores div h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #4DD7FA;
 }
 #licores .licores-layout .layout-box-licores .box-licores div .fa-solid {
   font-size: 50px;
   color: #FF6624;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 
 #nosotros {
@@ -207,6 +242,7 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 10px;
 }
@@ -214,6 +250,7 @@ header nav ul a li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #4DD7FA;
   padding: 10px;
 }
@@ -248,6 +285,7 @@ footer .gusta-bistro {
 }
 footer .gusta-bistro img {
   width: 100px;
+  border-radius: 20px;
 }
 footer .gusta-bistro p {
   font-style: "DM Sans", sans-serif;
@@ -270,6 +308,7 @@ footer .redes-credito div .fa-brands {
   font-size: 50px;
   padding: 20px;
   color: #FF6624;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 
 #ordenes {
@@ -287,6 +326,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FF6624;
   padding: 50px;
 }
@@ -302,6 +342,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -332,13 +373,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(187, 112, 83, 0.1647058824);
+  transform: scale(1);
 }
 #ordenes #hamburguesas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }
@@ -354,6 +396,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -384,13 +427,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(187, 112, 83, 0.1960784314);
+  transform: scale(1);
 }
 #ordenes #pastas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }
@@ -406,6 +450,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -436,13 +481,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(187, 112, 83, 0.1960784314);
+  transform: scale(1);
 }
 #ordenes #pizzas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }
@@ -458,6 +504,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -488,13 +535,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(114, 187, 83, 0.1607843137);
+  transform: scale(1);
 }
 #ordenes #vinos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }
@@ -510,6 +558,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -540,13 +589,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(114, 187, 83, 0.1176470588);
+  transform: scale(1);
 }
 #ordenes #cervezas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }
@@ -562,6 +612,7 @@ footer .redes-credito div .fa-brands {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #FEFB64;
   padding: 50px;
 }
@@ -592,13 +643,14 @@ footer .redes-credito div .fa-brands {
   height: 250px;
   border-radius: 30px;
   margin: 20px;
-  background-color: rgba(187, 112, 83, 0.4470588235);
-  transform: scale(0);
+  background-color: rgba(114, 187, 83, 0.1215686275);
+  transform: scale(1);
 }
 #ordenes #cocteles .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
 }

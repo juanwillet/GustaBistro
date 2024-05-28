@@ -13,6 +13,7 @@ $secondary-green: #E2EE79;
  font-family: $main-font;
  font-weight: 900;
  font-size:xx-large;
+ text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 @mixin grid-menu {
     display: grid;
@@ -84,6 +85,7 @@ header {
             .fa-solid {
               font-size: 50px;
               color: $primary-green;
+              text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
             }
         }
     }
@@ -93,6 +95,17 @@ header {
         padding: 50px;
         div {
         @include flex-column();
+        ul{
+            li{
+                list-style: none;
+                color: $orange;
+                font-family: $main-font;
+                font-weight: 1000;
+                font-size: x-large;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+                padding: 20px;
+            }
+        }
         button {
             outline: none;
             border: none;
@@ -102,6 +115,7 @@ header {
             font-family: $main-font;
             font-weight: 1000;
             font-size: larger;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
             padding: 10px;
         }
         h2 {
@@ -115,6 +129,7 @@ header {
         .fa-solid {
             font-size: 50px;
             color: $primary-green;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
         }
         }
       } 
@@ -149,6 +164,7 @@ header {
             .fa-solid {
               font-size: 50px;
               color: $orange;
+              text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
             }
         }
     }
@@ -158,6 +174,17 @@ header {
         padding: 50px;
         div {
         @include flex-column();
+        ul{
+            li{
+                list-style: none;
+                color: $blue;
+                font-family: $main-font;
+                font-weight: 1000;
+                font-size: x-large;
+                padding: 20px;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+            }
+        }
         button {
             outline: none;
             border: none;
@@ -167,6 +194,7 @@ header {
             font-family: $main-font;
             font-weight: 1000;
             font-size: larger;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
             padding: 10px;
         }
         h2 {
@@ -180,6 +208,7 @@ header {
         .fa-solid {
             font-size: 50px;
             color: $orange;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
         }
         }
       } 
@@ -236,6 +265,7 @@ footer {
     padding: 50px;
     img {
         width: 100px;
+        border-radius: 20px;
         
     }
     p{
@@ -256,6 +286,7 @@ footer {
             font-size: 50px;
             padding: 20px;
             color: $orange;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
         }
     }
    }
@@ -308,8 +339,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color:#bb70532a;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;
@@ -355,8 +386,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color:#bb705332;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;
@@ -402,8 +433,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color:#bb705332;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;
@@ -449,8 +480,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color:#72bb5329;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;
@@ -496,8 +527,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color:#72bb531e;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;
@@ -543,8 +574,8 @@ h1 {
                     height: 250px;
                     border-radius: 30px;
                     margin: 20px;
-                    background-color:#bb705372;
-                    transform: scale(0);
+                    background-color: #72bb531f;
+                    transform: scale(1);
                     p{
                         @include font-style();
                         color:#fefb64;

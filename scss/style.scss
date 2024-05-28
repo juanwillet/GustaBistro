@@ -262,68 +262,294 @@ footer {
 }
 #ordenes {
     @include grid-menu();
+    background-color: $yellow;
+    .titulo-ordenes {
+@include flex-column();
+background-color: #E2EE79;
+h1 {
+    @include font-style();
+    color: $orange;
+    padding: 50px;
+}
+    }
     #hamburguesas{
         @include flex-column();
+        background-color: $orange;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 
     }
     #pastas{
         @include flex-column();
+        background-color: $orange;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 
     }
     #pizzas{
         @include flex-column();
+        background-color: $orange;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 
     }
     #vinos{
         @include flex-column();
+        background-color: $primary-green;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 
     }
     #cervezas{
         @include flex-column();
+        background-color: $primary-green;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 
     }
     #cocteles{
         @include flex-column();
+        background-color: $primary-green;
+        border-radius: 40px;
+        margin: 30px;
+        h2 {
+            @include font-style();
+            color: $yellow;
+            padding: 50px;
+        }
         .menu-catalogo{
             @include grid-layout();
             .menu-card{
+                position: relative;
                 img{
-                    width: 100px;
+                    width: 350px;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                    margin: 20px;
+                    overflow: hidden;
+                    transition: 0.5;
+                }
+                &hover{
+                    .card-text{
+                        transform: scale(1);
+                    }
+                     
+                }
+                .card-text {
+                    position: absolute;
+                    top: 0;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 30px;
+                    margin: 20px;
+                    background-color:#bb705372;
+                    transform: scale(0);
+                    p{
+                        @include font-style();
+                        color:#fefb64;
+                        text-align: center;
+                    }
                 }
             }
         } 

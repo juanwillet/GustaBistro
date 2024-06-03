@@ -709,6 +709,14 @@ h1 {
     }
 }
 }
+#nosotros{
+    @include flex-column();
+    div{
+        .nosotros-content{
+            @include flex-column();
+        }
+    }
+}
 }
 @media (max-width:900px){
     header {
@@ -731,7 +739,10 @@ nav{
     .layout-box-titulo-licores{
         padding: 10px;
         div{
-justify-content: space-evenly;
+    justify-content: space-evenly;
+    .box-licores{
+        padding: 0;
+    }
         }
     }
     div{
@@ -739,6 +750,92 @@ justify-content: space-evenly;
         display: flex;
         justify-content: space-evenly;
         padding: 5px;
+        .box-licores{
+            padding: 0;
+        }
+        }
+    }
+}
+}
+#nosotros{
+
+    div{
+        .nosotros-content{
+            div{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media(max-width:700px){
+    #menu {
+    .menu-layout{
+        .layout-titulo{
+            padding: 10px;
+            div {
+                h1 {
+                font-size: x-large;
+                }
+                .fa-solid {
+                  font-size: 40px;
+                }
+            }
+        }  
+        .layout-box-titulo{
+            padding: 10px;
+            div{
+                justify-content: space-between;
+                .box{
+                    padding: 0;
+                }
+            }
+        }
+        div{
+            .layout-box{
+                flex-direction: column;
+                align-items: center;
+                .box{
+                    padding: 0;
+                }
+            }
+        }
+}
+}
+
+#licores {
+.licores-layout{
+    .layout-titulo-licores{
+        div {
+            h3 {
+            font-size: x-large;
+            }
+            .fa-solid {
+              font-size: 40px;
+            }
+        }
+    }  
+    .layout-box-titulo-licores{
+        div{ 
+            .box-licores{
+                div{
+                    h3{
+                        font-size: x-large;   
+                    }
+                    .fa-solid {
+                        font-size: 40px;
+                      }
+                }
+            }
+        }
+    }
+    div{
+        .layout-box-licores{
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -766,7 +863,48 @@ justify-content: space-evenly;
                         }
                     }
                 }
-                }    
+                }   
+                #menu {
+                    .menu-layout{
+                        .layout-box-titulo{
+                            padding: 10px;
+                            div{
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                }
+                }                
+        }
+@media (max-width:520px){
+    #nosotros{
+        div{
+            .nosotros-card{
+                h2{
+                  font-size: large
+                }
+                p {
+                    font-size: large
+                }
+            }
+        }
+        div{
+            .nosotros-content{
+                div{
+                    img{
+                        width: 420px;
+                    }
+                    iframe{
+                        width: 350px;
+                        height: 350px; 
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        @include flex-column();
+    }
         }
 @media(max-width:430px){
             header {
@@ -791,5 +929,32 @@ justify-content: space-evenly;
                         }
                     }
                 }
-                }    
+                } 
+            
+                #licores {
+                    .licores-layout{
+                        .layout-box-titulo-licores{
+                            div{
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                        }
+                    }
+                    }
+                    #nosotros{
+
+                        div{
+                            .nosotros-content{
+                                div{
+                                    img{
+                                        width: 350px;
+                                    }
+                                    iframe{
+                                        width: 280px;
+                                        height: 350px; 
+                                    }
+                                }
+                            }
+                        }
+                    }
         }

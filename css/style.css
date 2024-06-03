@@ -729,6 +729,16 @@ footer .redes-credito div .fa-brands {
     font-size: large;
     padding: 5px;
   }
+  #nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #nosotros div .nosotros-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 900px) {
   header nav ul a li {
@@ -743,10 +753,62 @@ footer .redes-credito div .fa-brands {
   #licores .licores-layout .layout-box-titulo-licores div {
     justify-content: space-evenly;
   }
+  #licores .licores-layout .layout-box-titulo-licores div .box-licores {
+    padding: 0;
+  }
   #licores .licores-layout div .layout-box-licores {
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
+  }
+  #licores .licores-layout div .layout-box-licores .box-licores {
+    padding: 0;
+  }
+  #nosotros div .nosotros-content div img {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  #menu .menu-layout .layout-titulo {
+    padding: 10px;
+  }
+  #menu .menu-layout .layout-titulo div h1 {
+    font-size: x-large;
+  }
+  #menu .menu-layout .layout-titulo div .fa-solid {
+    font-size: 40px;
+  }
+  #menu .menu-layout .layout-box-titulo {
+    padding: 10px;
+  }
+  #menu .menu-layout .layout-box-titulo div {
+    justify-content: space-between;
+  }
+  #menu .menu-layout .layout-box-titulo div .box {
+    padding: 0;
+  }
+  #menu .menu-layout div .layout-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu .menu-layout div .layout-box .box {
+    padding: 0;
+  }
+  #licores .licores-layout .layout-titulo-licores div h3 {
+    font-size: x-large;
+  }
+  #licores .licores-layout .layout-titulo-licores div .fa-solid {
+    font-size: 40px;
+  }
+  #licores .licores-layout .layout-box-titulo-licores div .box-licores div h3 {
+    font-size: x-large;
+  }
+  #licores .licores-layout .layout-box-titulo-licores div .box-licores div .fa-solid {
+    font-size: 40px;
+  }
+  #licores .licores-layout div .layout-box-licores {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 630px) {
@@ -762,6 +824,33 @@ footer .redes-credito div .fa-brands {
   }
   header nav ul a li {
     font-size: medium;
+  }
+  #menu .menu-layout .layout-box-titulo {
+    padding: 10px;
+  }
+  #menu .menu-layout .layout-box-titulo div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 520px) {
+  #nosotros div .nosotros-card h2 {
+    font-size: large;
+  }
+  #nosotros div .nosotros-card p {
+    font-size: large;
+  }
+  #nosotros div .nosotros-content div img {
+    width: 420px;
+  }
+  #nosotros div .nosotros-content div iframe {
+    width: 350px;
+    height: 350px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 430px) {
@@ -785,6 +874,17 @@ footer .redes-credito div .fa-brands {
   }
   header nav ul a li {
     font-size: large;
+  }
+  #licores .licores-layout .layout-box-titulo-licores div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #nosotros div .nosotros-content div img {
+    width: 350px;
+  }
+  #nosotros div .nosotros-content div iframe {
+    width: 280px;
+    height: 350px;
   }
 }
 

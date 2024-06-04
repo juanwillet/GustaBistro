@@ -27,7 +27,7 @@ $secondary-green: #E2EE79;
 @mixin grid-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
+    column-gap: 70px;
 }
 header {
     position: sticky;
@@ -324,11 +324,12 @@ footer {
    }
 }
 #ordenes {
-    @include grid-menu();
+    padding: 20px;
     background-color: $yellow;
     .titulo-ordenes {
 @include flex-column();
 background-color: #E2EE79;
+border-radius: 40px;
 h1 {
     @include font-style();
     color: $orange;
@@ -717,6 +718,50 @@ h1 {
         }
     }
 }
+#ordenes{
+    #hamburguesas{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    #pastas{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    #pizzas{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    #vinos{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    #cervezas{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+    #cocteles{
+        .menu-catalogo{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+}
 }
 @media (max-width:900px){
     header {
@@ -905,6 +950,111 @@ nav{
     footer{
         @include flex-column();
     }
+
+    #ordenes{
+        #hamburguesas{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        #pastas{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        #pizzas{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        #vinos{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        #cervezas{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+        #cocteles{
+            .menu-catalogo{
+                .menu-card{
+                    img{
+                     width: 300px;
+                     height: 200px;
+                    }
+                    .card-text{
+                        width: 300px;
+                        height: 200px;
+                        p{
+                            font-size: x-large;
+                        }
+                    }
+                }
+            }
+        }
+    }
         }
 @media(max-width:430px){
             header {
@@ -957,4 +1107,179 @@ nav{
                             }
                         }
                     }
+                    #ordenes{
+                        padding: 5px;
+                        #hamburguesas{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }
+                        #pastas{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }
+                        #pizzas{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }
+                        #vinos{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }
+                        #cervezas{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }
+                        #cocteles{
+                            .menu-catalogo{
+                                .menu-card{
+                                    img{
+                                     width: 250px;
+                                     height: 150px;
+                                    }
+                                    .card-text{
+                                        width: 250px;
+                                        height: 150px;
+                                    }
+                                }
+                            }
+                        }   
+                    }
+        @media (max-width:360px){
+            #ordenes{
+                #hamburguesas{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+                #pastas{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+                #pizzas{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+                #vinos{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+                #cervezas{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+                #cocteles{
+                    .menu-catalogo{
+                        .menu-card{
+                            img{
+                             width: 200px;
+                             height: 100px;
+                            }
+                            .card-text{
+                                width: 200px;
+                                height: 100px;
+                            }
+                        }
+                    }
+                }   
+            }
+        }            
         }

@@ -64,7 +64,7 @@ header nav ul a li {
 #menu .menu-layout .layout-box-titulo div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #menu .menu-layout .layout-box-titulo div .box {
   padding: 20px;
@@ -197,7 +197,7 @@ header nav ul a li {
 #licores .licores-layout div .layout-box-licores {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #licores .licores-layout div .layout-box-licores .box-licores {
   padding: 20px;
@@ -337,8 +337,7 @@ footer .redes-credito div .fa-brands {
 }
 
 #ordenes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  padding: 20px;
   background-color: #FEFB64;
 }
 #ordenes .titulo-ordenes {
@@ -346,6 +345,7 @@ footer .redes-credito div .fa-brands {
   flex-direction: column;
   align-items: center;
   background-color: #E2EE79;
+  border-radius: 40px;
 }
 #ordenes .titulo-ordenes h1 {
   font-family: "DM Sans", sans-serif;
@@ -374,7 +374,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #hamburguesas .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #hamburguesas .menu-catalogo .menu-card {
   position: relative;
@@ -428,7 +428,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #pastas .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #pastas .menu-catalogo .menu-card {
   position: relative;
@@ -482,7 +482,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #pizzas .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #pizzas .menu-catalogo .menu-card {
   position: relative;
@@ -536,7 +536,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #vinos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #vinos .menu-catalogo .menu-card {
   position: relative;
@@ -590,7 +590,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #cervezas .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #cervezas .menu-catalogo .menu-card {
   position: relative;
@@ -644,7 +644,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #cocteles .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 100px;
+  column-gap: 70px;
 }
 #ordenes #cocteles .menu-catalogo .menu-card {
   position: relative;
@@ -738,6 +738,36 @@ footer .redes-credito div .fa-brands {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #ordenes #hamburguesas .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #ordenes #pastas .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #ordenes #pizzas .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #ordenes #vinos .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #ordenes #cervezas .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #ordenes #cocteles .menu-catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 900px) {
@@ -852,6 +882,72 @@ footer .redes-credito div .fa-brands {
     flex-direction: column;
     align-items: center;
   }
+  #ordenes #hamburguesas .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #hamburguesas .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #hamburguesas .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card img {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card .card-text {
+    width: 300px;
+    height: 200px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card .card-text p {
+    font-size: x-large;
+  }
 }
 @media (max-width: 430px) {
   header nav {
@@ -885,6 +981,107 @@ footer .redes-credito div .fa-brands {
   #nosotros div .nosotros-content div iframe {
     width: 280px;
     height: 350px;
+  }
+  #ordenes {
+    padding: 5px;
+  }
+  #ordenes #hamburguesas .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #hamburguesas .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card img {
+    width: 250px;
+    height: 150px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card .card-text {
+    width: 250px;
+    height: 150px;
+  }
+}
+@media (max-width: 430px) and (max-width: 360px) {
+  #ordenes #hamburguesas .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #hamburguesas .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #pastas .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #pizzas .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #vinos .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #cervezas .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card img {
+    width: 200px;
+    height: 100px;
+  }
+  #ordenes #cocteles .menu-catalogo .menu-card .card-text {
+    width: 200px;
+    height: 100px;
   }
 }
 

@@ -84,7 +84,8 @@ header {
     }
 .layout-box-titulo{
     div{
-        @include grid-layout;
+        display: flex;
+   justify-content: space-around;
         .box{
             padding: 20px;
             div {
@@ -1281,7 +1282,20 @@ nav{
                     }
                 }   
             }
-        }            
+        } 
+        #nosotros{
+
+            div{
+                .nosotros-content{
+                    div{
+                        img{
+                            width: 290px;
+                        }
+
+                    }
+                }
+            }
+        }           
         }
         @media (min-width:750px) and (max-width:949px){
             #ordenes{

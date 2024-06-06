@@ -62,9 +62,8 @@ header nav ul a li {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 #menu .menu-layout .layout-box-titulo div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 #menu .menu-layout .layout-box-titulo div .box {
   padding: 20px;
@@ -1082,6 +1081,11 @@ footer .redes-credito div .fa-brands {
   #ordenes #cocteles .menu-catalogo .menu-card .card-text {
     width: 200px;
     height: 100px;
+  }
+}
+@media (max-width: 430px) {
+  #nosotros div .nosotros-content div img {
+    width: 290px;
   }
 }
 @media (min-width: 750px) and (max-width: 949px) {

@@ -4,10 +4,72 @@
   box-sizing: border-box;
 }
 
+.carrito {
+  display: none;
+}
+
+.carrito-abierto {
+  position: sticky;
+  top: 300px;
+  z-index: 2;
+  background-color: #72BB53;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.carrito-abierto div {
+  background-color: #FF6624;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.carrito-abierto div h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  border-radius: 15px;
+}
+.carrito-abierto div button {
+  background-color: #FF6624;
+  outline: none;
+  border: none;
+}
+.carrito-abierto div button .fa-regular {
+  color: #FEFB64;
+  font-size: 35px;
+}
+.carrito-abierto div ul {
+  list-style: none;
+}
+.carrito-abierto div ul li {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+}
+.carrito-abierto div ul .total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.carrito-abierto div ul .total div {
+  padding: 0;
+}
+.carrito-abierto div ul .total div p {
+  padding: 0;
+}
+
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
+  background-color: #FEFB64;
+  border-radius: 15px;
 }
 header nav {
   display: flex;
@@ -30,6 +92,21 @@ header nav ul a {
   align-content: center;
 }
 header nav ul a li {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+}
+header nav ul button {
+  padding: 20px;
+  text-decoration: none;
+  align-content: center;
+  background-color: #FF6624;
+  outline: none;
+  border: none;
+}
+header nav ul button li {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -385,20 +462,16 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
-}
-#ordenes #hamburguesas .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
 }
 #ordenes #hamburguesas .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
+  z-index: 1;
   width: 350px;
   height: 250px;
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(187, 112, 83, 0.1647058824);
-  transform: scale(1);
 }
 #ordenes #hamburguesas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -446,6 +519,7 @@ footer .redes-credito div .fa-brands {
 }
 #ordenes #pastas .menu-catalogo .menu-card .card-text {
   position: absolute;
+  z-index: 1;
   top: 0;
   width: 350px;
   height: 250px;
@@ -501,6 +575,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #pizzas .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
+  z-index: 1;
   width: 350px;
   height: 250px;
   border-radius: 30px;
@@ -554,6 +629,7 @@ footer .redes-credito div .fa-brands {
 }
 #ordenes #vinos .menu-catalogo .menu-card .card-text {
   position: absolute;
+  z-index: 1;
   top: 0;
   width: 350px;
   height: 250px;
@@ -609,6 +685,7 @@ footer .redes-credito div .fa-brands {
 #ordenes #cervezas .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
+  z-index: 1;
   width: 350px;
   height: 250px;
   border-radius: 30px;
@@ -662,6 +739,7 @@ footer .redes-credito div .fa-brands {
 }
 #ordenes #cocteles .menu-catalogo .menu-card .card-text {
   position: absolute;
+  z-index: 1;
   top: 0;
   width: 350px;
   height: 250px;
@@ -1085,7 +1163,7 @@ footer .redes-credito div .fa-brands {
 }
 @media (max-width: 430px) {
   #nosotros div .nosotros-content div img {
-    width: 290px;
+    width: 290gitpx;
   }
 }
 @media (min-width: 750px) and (max-width: 949px) {

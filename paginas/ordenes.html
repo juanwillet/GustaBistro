@@ -22,9 +22,23 @@
             <a href="../index.html#licores" target="_blank"><li>Licores</li></a>
             <a href="../index.html#nosotros" target="_blank"><li>Nosotros</li></a>
             <a href="../paginas/ordenes.html" target="_blank"><li>Ordena Online</li></a>
-            <a href=""><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            <button id="abrir-carrito"><li><i class="fa-solid fa-cart-shopping"></i></li></button>
         </ul>
     </nav>
+    <div id="carrito" class="carrito">
+      <div>
+        <h2>Orden</h2>
+        <button id="cerrar-carrito"><i class="fa-regular fa-circle-xmark"></i></button>
+      </div>
+      <div>
+         <ul id="lista-pedidos">
+           <li class="total">
+            <div><p>Total:</p></div>
+            <div><p id="suma"></p></div>
+           </li>  
+         </ul>
+      </div>
+   </div>
 </header>
 <body>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -39,8 +53,8 @@
             <img src="../imagenes/gusta-banner-3.png" class="d-block w-100" alt="banner-platos-menu">
           </div>
         </div>
-      </div>
-      <section id="ordenes">
+      </div>     
+<section id="ordenes">
  <div class="titulo-ordenes">
       <h1>Menu</h1>
  </div>
@@ -52,37 +66,37 @@
         <div>
          <div class="menu-card">
             <img src="../hamburguesas/hamburguesa1.jpg" alt="pollo-crispy">
-            <div class="card-text"><p>Sandwich de Pollo Crispy</p></div>
+            <div class="card-text"><p>Gustaburguer</p></div>
          </div> 
         </div>
         <div>
             <div class="menu-card">
                <img src="../hamburguesas/hamburguesa2.webp" alt="gustaburguer">
-               <div class="card-text"><p>Gustaburguer</p></div>
-            </div> 
-           </div>
-           <div>
-            <div class="menu-card">
-               <img src="../hamburguesas/hamburguesa3.jpg" alt="sweet-burguer">
                <div class="card-text"><p>Sweet Bacon Burguer</p></div>
             </div> 
            </div>
            <div>
             <div class="menu-card">
-               <img src="../hamburguesas/hamburguesa4.jpg" alt="chicken-salad-burguer">
+               <img src="../hamburguesas/hamburguesa3.jpg" alt="sweet-burguer">
                <div class="card-text"><p>Gusta Chicken Salad</p></div>
             </div> 
            </div>
            <div>
             <div class="menu-card">
-               <img src="../hamburguesas/hamburguesa5.jpg" alt="hamburguesa-camarones">
+               <img src="../hamburguesas/hamburguesa4.jpg" alt="chicken-salad-burguer">
                <div class="card-text"><p>Gusta Marina</p></div>
             </div> 
            </div>
            <div>
             <div class="menu-card">
-               <img src="../hamburguesas/hamburguesa6.jpg" alt="mushroom-burguer">
+               <img src="../hamburguesas/hamburguesa5.jpg" alt="hamburguesa-camarones">
                <div class="card-text"><p>Mushroom Gravy Burguer</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../hamburguesas/hamburguesa6.jpg" alt="mushroom-burguer">
+               <div class="card-text"><p>Sandwich de Pollo Crispy</p></div>
             </div> 
            </div>
         </section>

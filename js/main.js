@@ -169,7 +169,8 @@ const hamburguesas =[sandwichPolloCrispy, gustaBurguer, sweetBaconBurguer, gusta
 let total=0
 const sumadora= (entrada)=>{
 let nuevoTotal=total+entrada
-return nuevoTotal
+total=nuevoTotal
+return total
 }
 //---------------------------------------------------------EVENTOS BOTONES CARRITO---------------------------------------------------------
 const carrito= document.getElementById('carrito')
@@ -192,7 +193,7 @@ const suma= document.getElementById('suma')
 
 
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Gusta burguer')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Gusta burguer'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -200,9 +201,10 @@ const burguerGusta= menuCard[0].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const burguerSweetBacon= menuCard[1].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Sweet bacon burguer')
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Sweet bacon burguer'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -210,9 +212,10 @@ const burguerSweetBacon= menuCard[1].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const burguerChickenSalad= menuCard[2].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Gusta chicken salad')
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Gusta chicken salad'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -220,9 +223,10 @@ const burguerChickenSalad= menuCard[2].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const burguerMarina= menuCard[3].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Gusta marina')
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Gusta marina'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -230,9 +234,10 @@ const burguerMarina= menuCard[3].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const burguerMushroomGravy= menuCard[4].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Mushroom gravy burguer')
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Mushroom gravy burguer'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -240,9 +245,10 @@ const burguerMushroomGravy= menuCard[4].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const burguerPolloCrispy= menuCard[5].addEventListener('click', ()=>{
-    const eleccionMenu= hamburguesas.find(ele=> ele.nombre='Sandwich de pollo crispy')
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Sandwich de pollo crispy'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -250,9 +256,10 @@ const burguerPolloCrispy= menuCard[5].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaAlfredo= menuCard[6].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Fetuccini alfredo')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Fetuccini alfredo'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -260,9 +267,10 @@ const pastaAlfredo= menuCard[6].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaAmatriciana= menuCard[7].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Amatriciana')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Amatriciana'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -270,9 +278,10 @@ const pastaAmatriciana= menuCard[7].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaRaviolisTomate= menuCard[8].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Raviolis en salsa de tomate')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Raviolis en salsa de tomate'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -280,9 +289,10 @@ const pastaRaviolisTomate= menuCard[8].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaPollo= menuCard[9].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Pasta de pollo')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Pasta de pollo'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -290,9 +300,10 @@ const pastaPollo= menuCard[9].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaPesto= menuCard[10].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Pasta en salsa pesto')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Pasta en salsa pesto'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -300,9 +311,10 @@ const pastaPesto= menuCard[10].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pastaRaviolisEspinaca= menuCard[11].addEventListener('click', ()=>{
-    const eleccionMenu= pastas.find(ele=> ele.nombre='Raviolis con espinaca')
+    const eleccionMenu= pastas.find(ele=> ele.nombre.includes('Raviolis con espinaca'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -310,9 +322,10 @@ const pastaRaviolisEspinaca= menuCard[11].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaAceitunas= menuCard[12].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Aceitunas negras')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Aceitunas negras'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -320,9 +333,10 @@ const pizzaAceitunas= menuCard[12].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaJamon= menuCard[13].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Jamon')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Jamon'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -330,9 +344,10 @@ const pizzaJamon= menuCard[13].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaPeperoni= menuCard[14].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Peperoni')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Peperoni'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -340,9 +355,10 @@ const pizzaPeperoni= menuCard[14].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaTocino= menuCard[15].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Tocino')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Tocino'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -350,9 +366,10 @@ const pizzaTocino= menuCard[15].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaMargarita= menuCard[16].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Margarita')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Margarita'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -360,9 +377,10 @@ const pizzaMargarita= menuCard[16].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const pizzaVegetariana= menuCard[17].addEventListener('click', ()=>{
-    const eleccionMenu= pizzas.find(ele=> ele.nombre='Vegetariana')
+    const eleccionMenu= pizzas.find(ele=> ele.nombre.includes('Vegetariana'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -370,9 +388,10 @@ const pizzaVegetariana= menuCard[17].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoSauvignon= menuCard[18].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Sauvignon blanco')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Sauvignon blanco'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -380,9 +399,10 @@ const vinoSauvignon= menuCard[18].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoRose= menuCard[19].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Rose')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Rose'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -390,9 +410,10 @@ const vinoRose= menuCard[19].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoMerlot= menuCard[20].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Merlot')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Merlot'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -400,9 +421,10 @@ const vinoMerlot= menuCard[20].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoCabernet= menuCard[21].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Cabernet sauvignon')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Cabernet sauvignon'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -410,9 +432,10 @@ const vinoCabernet= menuCard[21].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoTinto= menuCard[22].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Vino tinto seco')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Vino tinto seco'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -420,9 +443,10 @@ const vinoTinto= menuCard[22].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const vinoBlanco= menuCard[23].addEventListener('click', ()=>{
-    const eleccionMenu= vinos.find(ele=> ele.nombre='Vino blanco seco')
+    const eleccionMenu= vinos.find(ele=> ele.nombre.includes('Vino blanco seco'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -430,9 +454,10 @@ const vinoBlanco= menuCard[23].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaSoleraVerde= menuCard[24].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Solera verde')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Solera verde'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -440,9 +465,10 @@ const cervezaSoleraVerde= menuCard[24].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaSoleraAzul= menuCard[25].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Solera azul')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Solera azul'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -450,9 +476,10 @@ const cervezaSoleraAzul= menuCard[25].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaCorona= menuCard[26].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Corona')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Corona'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -460,9 +487,10 @@ const cervezaCorona= menuCard[26].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaZulia= menuCard[27].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Balde zulia')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Balde zulia'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -470,9 +498,10 @@ const cervezaZulia= menuCard[27].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaPolar= menuCard[28].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Balde polar')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Balde polar'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -480,9 +509,10 @@ const cervezaPolar= menuCard[28].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const cervezaHeineken= menuCard[29].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre='Heineken')
+    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Heineken'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -490,9 +520,10 @@ const cervezaHeineken= menuCard[29].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const coctelMargarita= menuCard[30].addEventListener('click', ()=>{
-    const eleccionMenu= cocteles.find(ele=> ele.nombre='Margarita')
+    const eleccionMenu= cocteles.find(ele=> ele.nombre.includes('Margarita'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -500,9 +531,10 @@ const coctelMargarita= menuCard[30].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const coctelMojito= menuCard[31].addEventListener('click', ()=>{
-    const eleccionMenu= cocteles.find(ele=> ele.nombre='Mojito')
+    const eleccionMenu= cocteles.find(ele=> ele.nombre.includes('Mojito'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -510,9 +542,10 @@ const coctelMojito= menuCard[31].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 const coctelNegroni= menuCard[32].addEventListener('click', ()=>{
-    const eleccionMenu= cocteles.find(ele=> ele.nombre='Negroni')
+    const eleccionMenu= cocteles.find(ele=> ele.nombre.includes('Negroni'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
@@ -520,11 +553,18 @@ const coctelNegroni= menuCard[32].addEventListener('click', ()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
-
     suma.innerHTML=sumadora(eleccionMenu.precio)
 })
 
-
-
-
-
+const recuperacionDeOrden=()=>{
+    let ordenRecuperada= JSON.parse(localStorage.getItem('guardado'))
+    let listaOrdenRecuperada=ordenRecuperada.forEach(producto=>{
+    let datosEleccion= producto.nombre+" "+producto.precio+"$"
+    const pedido= document.createElement('li')
+    pedido.innerHTML=  datosEleccion
+    listaPedidos.appendChild(pedido)
+    suma.innerHTML=sumadora(producto.precio)
+   }) 
+   return listaOrdenRecuperada
+}
+recuperacionDeOrden()

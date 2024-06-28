@@ -13,18 +13,32 @@
     <title>Gusta Bistro</title>
 </head>
 <header>
-    <nav>
-        <div>
-            <a href="./index.html" target="_blank"><img src="./imagenes/gusta-logotipo.png" alt="gusta-bistro-logotipo"></a>
-        </div>
-        <ul>
-            <a href="#menu"><li>Menu</li></a>
-            <a href="#licores"><li>Licores</li></a>
-            <a href="#nosotros"><li>Nosotros</li></a>
-            <a href="./paginas/ordenes.html" target="_blank"><li>Ordena Online</li></a>
-            <a href=""><li><i class="fa-solid fa-cart-shopping"></i></li></a>
-        </ul>
-    </nav>
+  <nav>
+      <div>
+          <a href="../index.html" target="_blank"><img src="../imagenes/gusta-logotipo.png" alt="gusta-bistro-logotipo"></a>
+      </div>
+      <ul>
+          <a href="../index.html#menu" target="_blank"><li>Menu</li></a>
+          <a href="../index.html#licores" target="_blank"><li>Licores</li></a>
+          <a href="../index.html#nosotros" target="_blank"><li>Nosotros</li></a>
+          <a href="../paginas/ordenes.html" target="_blank"><li>Ordena Online</li></a>
+          <button id="abrir-carrito"><li><i class="fa-solid fa-cart-shopping"></i></li></button>
+      </ul>
+  </nav>
+  <div id="carrito" class="carrito">
+    <div>
+      <h2>Orden</h2>
+      <button id="cerrar-carrito"><i class="fa-regular fa-circle-xmark"></i></button>
+    </div>
+    <div>
+       <ul id="lista-pedidos">
+         <li class="total">
+          <div><p>Total:</p></div>
+          <div><p id="suma"></p></div>
+         </li>  
+       </ul>
+    </div>
+ </div>
 </header>
 <body>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">

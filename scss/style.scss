@@ -29,65 +29,67 @@ $secondary-green: #E2EE79;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 70px;
 }
-.carrito{
-    display: none;
-}
-.carrito-abierto{
-    position: sticky;
-    top: 300px;
-    z-index: 2;
-    background-color: $primary-green;
-    display: flex;
-    flex-direction: column;
-    
-    padding: 20px;
-    div{
-        background-color: $orange;
-        padding: 20px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: space-between;
-        margin: 10px;
-        h2{
-            @include font-style(); 
-            color: $yellow;
-            border-radius: 15px; 
-        }
-        button{
-            background-color: $orange;
-            outline: none;
-            border: none;
-           .fa-regular{
-            color: $yellow;
-            font-size: 35px;
-           } 
-        }
-        ul{
-            list-style: none;
-            li{
-                @include font-style();
-                color: $yellow;
-            }
-            .total{
-                display: flex;
-                justify-content: space-between;
-                padding: 0;
-                div{
-                    padding: 0;
-                    p{
-                        padding: 0;
-                    }
-                }
-            }
-        }
-    }
-}
 header {
     position: sticky;
     top: 0;
     z-index: 3;
     background-color: $yellow;
     border-radius: 15px;
+    .carrito{
+        display: none;
+    }
+    .carrito-abierto{
+        position: sticky;
+        top: 300px;
+        z-index: 2;
+        background-color: $primary-green;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10px;
+        div{
+            background-color: $orange;
+            padding: 10px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            h2{
+                @include font-style(); 
+                font-size: x-large;
+                color: $yellow;
+                border-radius: 15px; 
+            }
+            button{
+                background-color: $orange;
+                outline: none;
+                border: none;
+               .fa-regular{
+                color: $yellow;
+                font-size: 25px;
+               } 
+            }
+            ul{
+                list-style: none;
+                li{
+                    @include font-style();
+                    font-size: x-large;
+                    color: $yellow;
+                }
+                .total{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    div{
+                        padding: 0;
+                        p{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
     nav {
         display: flex;
         justify-content: space-around;
@@ -831,6 +833,25 @@ h1 {
 }
 @media (max-width:900px){
     header {
+        .carrito-abierto{
+            padding: 10px;
+            div{
+                padding: 10px;
+                h2{
+                  font-size:larger;
+                }
+                button{
+                   .fa-regular{
+                    font-size: 25px;
+                   } 
+                }
+                ul{
+                    li{
+                        font-size:larger;
+                    }
+                }
+            }
+        }
 nav{
     ul{
         a{
@@ -883,6 +904,27 @@ nav{
 }
 
 @media(max-width:700px){
+    header {
+        .carrito-abierto{
+            padding: 10px;
+            div{
+                padding: 10px;
+                h2{
+                  font-size:larger;
+                }
+                button{
+                   .fa-regular{
+                    font-size: 25px;
+                   } 
+                }
+                ul{
+                    li{
+                        font-size:larger;
+                    }
+                }
+            }
+        }
+    }
     #menu {
     .menu-layout{
         .layout-titulo{
@@ -988,6 +1030,27 @@ nav{
                 }                
         }
 @media (max-width:520px){
+    header {
+        .carrito-abierto{
+            padding: 10px;
+            div{
+                padding: 10px;
+                h2{
+                  font-size:larger;
+                }
+                button{
+                   .fa-regular{
+                    font-size: 25px;
+                   } 
+                }
+                ul{
+                    li{
+                        font-size:larger;
+                    }
+                }
+            }
+        }
+    }
     #nosotros{
         div{
             .nosotros-card{
@@ -1124,6 +1187,25 @@ nav{
         }
 @media(max-width:430px){
             header {
+                .carrito-abierto{
+                    padding: 10px;
+                    div{
+                        padding: 10px;
+                        h2{
+                          font-size: medium;
+                        }
+                        button{
+                           .fa-regular{
+                            font-size: 25px;
+                           } 
+                        }
+                        ul{
+                            li{
+                                font-size: medium;
+                            }
+                        }
+                    }
+                }
                 nav{
                     @include flex-column();
                     padding: 5px;
@@ -1258,7 +1340,57 @@ nav{
                                     }
                                 }
                             }
-                        }   
+                        }
+                        .carrito-abierto{
+    position: sticky;
+    top: 300px;
+    z-index: 2;
+    background-color: $primary-green;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    div{
+        background-color: $orange;
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        h2{
+            @include font-style(); 
+            color: $yellow;
+            border-radius: 15px; 
+        }
+        button{
+            background-color: $orange;
+            outline: none;
+            border: none;
+           .fa-regular{
+            color: $yellow;
+            font-size: 35px;
+           } 
+        }
+        ul{
+            list-style: none;
+            li{
+                @include font-style();
+                color: $yellow;
+            }
+            .total{
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                div{
+                    padding: 0;
+                    p{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}   
                     }
         @media (max-width:360px){
             #ordenes{

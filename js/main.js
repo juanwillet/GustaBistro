@@ -170,7 +170,7 @@ let total=0
 const sumadora= (entrada)=>{
 let nuevoTotal=total+entrada
 total=nuevoTotal
-return total
+return total+"$"
 }
 //---------------------------------------------------------EVENTOS BOTONES CARRITO---------------------------------------------------------
 const carrito= document.getElementById('carrito')

@@ -559,6 +559,7 @@ const coctelNegroni= menuCard[32].addEventListener('click', ()=>{
 const recuperacionDeOrden=()=>{
     let ordenRecuperada= JSON.parse(localStorage.getItem('guardado'))
     let listaOrdenRecuperada=ordenRecuperada.forEach(producto=>{
+    registroDeOrden.push(producto)
     let datosEleccion= producto.nombre+" "+producto.precio+"$"
     const pedido= document.createElement('li')
     pedido.innerHTML=  datosEleccion

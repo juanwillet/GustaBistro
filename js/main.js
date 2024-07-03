@@ -193,23 +193,26 @@ const suma= document.getElementById('suma')
 
 
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
-    const eleccionMenu= cervezas.find(ele=> ele.nombre.includes('Gusta burguer'))
+    const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Gusta burguer'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
     const pedido= document.createElement('li')
-    pedido.innerHTML=  datosEleccion
+    pedido.innerHTML= datosEleccion 
     listaPedidos.appendChild(pedido)
+    pedido.classList.toggle('gusta')
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
     suma.innerHTML=sumadora(eleccionMenu.precio)
+    
 })
+
 const burguerSweetBacon= menuCard[1].addEventListener('click', ()=>{
     const eleccionMenu= hamburguesas.find(ele=> ele.nombre.includes('Sweet bacon burguer'))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
     eleccion=eleccionMenu
     registroDeOrden.push(eleccion)
     const pedido= document.createElement('li')
-    pedido.innerHTML=  datosEleccion
+    pedido.innerHTML= datosEleccion
     listaPedidos.appendChild(pedido)
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
     suma.innerHTML=sumadora(eleccionMenu.precio)
@@ -555,7 +558,7 @@ const coctelNegroni= menuCard[32].addEventListener('click', ()=>{
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
     suma.innerHTML=sumadora(eleccionMenu.precio)
 })
-
+//---------------------------------------------------------REGISTRO DE COMPRA---------------------------------------------------------
 const recuperacionDeOrden=()=>{
     let ordenRecuperada= JSON.parse(localStorage.getItem('guardado'))
     let listaOrdenRecuperada=ordenRecuperada.forEach(producto=>{

@@ -84,6 +84,14 @@ header {
                         padding: 0;
                         p{
                             padding: 0;
+                            @include font-style();
+                            font-size: x-large;
+                            color: $yellow;
+                        }
+                        button{
+                            @include font-style();
+                            font-size: x-large;
+                            color: $yellow;
                         }
                     }
                 }

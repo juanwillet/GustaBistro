@@ -188,7 +188,7 @@ abrirCarrito.addEventListener('click', ()=>{
 cerrarCarrito.addEventListener('click', ()=>{
     carrito.classList.toggle('carrito-abierto')
 })
-//---------------------------------------------------------EVENTOS PRODUCTOS---------------------------------------------------------
+
 let registroDeOrden=[]
 let eleccion
 
@@ -197,14 +197,17 @@ const listaPedidos= document.getElementById('lista-pedidos')
 const suma= document.getElementById('suma')
 
 
-
-const botonDeBorrar =(pedido)=>{
-const boton= document.getElementById('borrar')
-boton.addEventListener('click', ()=>{
-    listaPedidos.removeChild(pedido)
-}) 
+const borrador= (item, registro)=>{
+    const boton= document.getElementById('borrar')
+    boton.addEventListener('click', ()=>{
+        listaPedidos.removeChild(item)
+        JSON.parse(localStorage.getItem('guardado'))
+        registroDeOrden.pop(registro)
+        localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+        suma.innerHTML=restadora(registro.precio)
+    }) 
 }
-
+//---------------------------------------------------------EVENTOS PRODUCTOS----------------------------------------------------
 const clasificador=(seccion, comida)=>{
     const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
@@ -215,14 +218,7 @@ const clasificador=(seccion, comida)=>{
     listaPedidos.appendChild(pedido)
     pedido.classList.toggle('gusta')
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
-    const boton= document.getElementById('borrar')
-    boton.addEventListener('click', ()=>{
-        listaPedidos.removeChild(pedido)
-        JSON.parse(localStorage.getItem('guardado'))
-        registroDeOrden.pop(eleccion)
-        localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
-        suma.innerHTML=restadora(eleccionMenu.precio)
-    }) 
+    borrador(pedido, eleccionMenu)  
     suma.innerHTML=sumadora(eleccionMenu.precio)
 }
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
@@ -334,6 +330,7 @@ const recuperacionDeOrden=()=>{
     pedido.innerHTML=  datosEleccion
     listaPedidos.appendChild(pedido)
     pedido.classList.toggle('gusta')
+    borrador(pedido, producto) 
     suma.innerHTML=sumadora(producto.precio)
    }) 
    return listaOrdenRecuperada

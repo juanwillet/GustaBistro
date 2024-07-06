@@ -137,19 +137,6 @@ header nav ul .notificacion-activa {
   padding-left: 8px;
   padding-right: 8px;
 }
-header nav ul .notificacion-activa-dos {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 900;
-  border-radius: 50%;
-  background-color: red;
-  color: white;
-  position: absolute;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-header nav ul .notificacion-vacia {
-  display: none;
-}
 
 #menu {
   display: grid;

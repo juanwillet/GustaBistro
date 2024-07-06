@@ -206,9 +206,9 @@ const borrador= (item, registro)=>{
         registroDeOrden.pop(registro)
         localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
         suma.innerHTML=restadora(registro.precio)
+        notificacion.innerText=registroDeOrden.length
     }) 
 }
-
 //---------------------------------------------------------EVENTOS PRODUCTOS----------------------------------------------------
 const clasificador=(seccion, comida)=>{
     const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
@@ -223,8 +223,9 @@ const clasificador=(seccion, comida)=>{
     borrador(pedido, eleccionMenu)  
     suma.innerHTML=sumadora(eleccionMenu.precio)
     notificacion.innerText=registroDeOrden.length
-    notificacion.classList.toggle('notificacion-activa')
-    notificacion.classList.toggle('notificacion-activa-dos')
+    if(registroDeOrden.length==0){
+        notificacion.innerText=registroDeOrden.length
+    }
 }
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
 clasificador(hamburguesas, 'Gusta burguer')
@@ -343,24 +344,9 @@ const recuperacionDeOrden=()=>{
 recuperacionDeOrden()
 //---------------------------------------------------------NOTIFICACION DE CARRITO LLENO----------------------------------------------------
 
-const notificador=()=>{
-    if(registroDeOrden.length!==0) {
+const notificacionRecuperada=()=>{
+if(registroDeOrden.length!==0){
         notificacion.innerText=registroDeOrden.length
-        notificacion.classList.toggle('notificacion-activa')
-    }
-    else if(registroDeOrden.length===0){
-        notificacion.innerText=registroDeOrden.length
-        notificacion.classList.toggle('notificacion-vacia')
     }
 }
-
-notificador()
-
-/*notificacion.addEventListener('change', ()=>{
-    if(estadoDeCompra=true) {
-        notificacion.innerText=registroDeOrden.length
-        notificacion.classList.toggle('notificacion-activa')
-    }
-    else if(estadoDeCompra=false){
-        notificacion.classList.toggle('notificacion-vacia')}
-})  */
+notificacionRecuperada()

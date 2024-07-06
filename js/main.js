@@ -181,6 +181,7 @@ const restadora= (entrada)=>{
 const carrito= document.getElementById('carrito')
 const abrirCarrito= document.getElementById('abrir-carrito')
 const cerrarCarrito= document.getElementById('cerrar-carrito')
+const notificacion= document.getElementById("notificacion")
 
 abrirCarrito.addEventListener('click', ()=>{
     carrito.classList.toggle('carrito-abierto')
@@ -207,6 +208,7 @@ const borrador= (item, registro)=>{
         suma.innerHTML=restadora(registro.precio)
     }) 
 }
+
 //---------------------------------------------------------EVENTOS PRODUCTOS----------------------------------------------------
 const clasificador=(seccion, comida)=>{
     const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
@@ -216,10 +218,13 @@ const clasificador=(seccion, comida)=>{
     const pedido= document.createElement('li')
     pedido.innerHTML= datosEleccion 
     listaPedidos.appendChild(pedido)
-    pedido.classList.toggle('gusta')
+    //pedido.classList.toggle('gusta')
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
     borrador(pedido, eleccionMenu)  
     suma.innerHTML=sumadora(eleccionMenu.precio)
+    notificacion.innerText=registroDeOrden.length
+    notificacion.classList.toggle('notificacion-activa')
+    notificacion.classList.toggle('notificacion-activa-dos')
 }
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
 clasificador(hamburguesas, 'Gusta burguer')
@@ -336,5 +341,26 @@ const recuperacionDeOrden=()=>{
    return listaOrdenRecuperada
 }
 recuperacionDeOrden()
+//---------------------------------------------------------NOTIFICACION DE CARRITO LLENO----------------------------------------------------
 
+const notificador=()=>{
+    if(registroDeOrden.length!==0) {
+        notificacion.innerText=registroDeOrden.length
+        notificacion.classList.toggle('notificacion-activa')
+    }
+    else if(registroDeOrden.length===0){
+        notificacion.innerText=registroDeOrden.length
+        notificacion.classList.toggle('notificacion-vacia')
+    }
+}
 
+notificador()
+
+/*notificacion.addEventListener('change', ()=>{
+    if(estadoDeCompra=true) {
+        notificacion.innerText=registroDeOrden.length
+        notificacion.classList.toggle('notificacion-activa')
+    }
+    else if(estadoDeCompra=false){
+        notificacion.classList.toggle('notificacion-vacia')}
+})  */

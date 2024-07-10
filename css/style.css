@@ -214,7 +214,7 @@ header nav ul .notificacion-activa {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 20px;
 }
-#menu .menu-layout div .layout-box .box div button {
+#menu .menu-layout div .layout-box .box div ul li button {
   outline: none;
   border: none;
   border-radius: 15px;
@@ -225,6 +225,10 @@ header nav ul .notificacion-activa {
   font-size: larger;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 10px;
+  transition: 0.5s;
+}
+#menu .menu-layout div .layout-box .box div ul li :hover {
+  font-size: x-large;
 }
 #menu .menu-layout div .layout-box .box div h2 {
   font-family: "DM Sans", sans-serif;
@@ -316,7 +320,7 @@ header nav ul .notificacion-activa {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 20px;
 }
-#licores .licores-layout div .layout-box-licores .box-licores div button {
+#licores .licores-layout div .layout-box-licores .box-licores div ul li button {
   outline: none;
   border: none;
   border-radius: 15px;
@@ -327,6 +331,10 @@ header nav ul .notificacion-activa {
   font-size: larger;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   padding: 10px;
+  transition: 0.5s;
+}
+#licores .licores-layout div .layout-box-licores .box-licores div ul li :hover {
+  font-size: x-large;
 }
 #licores .licores-layout div .layout-box-licores .box-licores div h3 {
   font-family: "DM Sans", sans-serif;
@@ -496,6 +504,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(187, 112, 83, 0.1647058824);
+  transition: 0.8s;
 }
 #ordenes #hamburguesas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -504,6 +513,14 @@ footer .redes-credito div .fa-brands {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
+}
+#ordenes #hamburguesas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes #hamburguesas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
 }
 #ordenes #pastas {
   display: flex;
@@ -536,10 +553,6 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
-}
-#ordenes #pastas .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
 }
 #ordenes #pastas .menu-catalogo .menu-card .card-text {
   position: absolute;
@@ -550,7 +563,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(187, 112, 83, 0.1960784314);
-  transform: scale(1);
+  transition: 0.8s;
 }
 #ordenes #pastas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -559,6 +572,14 @@ footer .redes-credito div .fa-brands {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
+}
+#ordenes #pastas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes #pastas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
 }
 #ordenes #pizzas {
   display: flex;
@@ -591,10 +612,6 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
-}
-#ordenes #pizzas .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
 }
 #ordenes #pizzas .menu-catalogo .menu-card .card-text {
   position: absolute;
@@ -605,7 +622,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(187, 112, 83, 0.1960784314);
-  transform: scale(1);
+  transition: 0.8s;
 }
 #ordenes #pizzas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -614,6 +631,14 @@ footer .redes-credito div .fa-brands {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
+}
+#ordenes #pizzas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes #pizzas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
 }
 #ordenes #vinos {
   display: flex;
@@ -646,10 +671,6 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
-}
-#ordenes #vinos .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
 }
 #ordenes #vinos .menu-catalogo .menu-card .card-text {
   position: absolute;
@@ -660,7 +681,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(114, 187, 83, 0.1607843137);
-  transform: scale(1);
+  transition: 0.8s;
 }
 #ordenes #vinos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -669,6 +690,14 @@ footer .redes-credito div .fa-brands {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
+}
+#ordenes #vinos .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes #vinos .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
 }
 #ordenes #cervezas {
   display: flex;
@@ -701,10 +730,6 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
-}
-#ordenes #cervezas .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
 }
 #ordenes #cervezas .menu-catalogo .menu-card .card-text {
   position: absolute;
@@ -715,7 +740,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(114, 187, 83, 0.1176470588);
-  transform: scale(1);
+  transition: 0.8s;
 }
 #ordenes #cervezas .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
@@ -724,8 +749,17 @@ footer .redes-credito div .fa-brands {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
 }
-#ordenes #cocteles {
+#ordenes #cervezas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes #cervezas .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
+}
+
+#cocteles {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -733,7 +767,7 @@ footer .redes-credito div .fa-brands {
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #cocteles h2 {
+#cocteles h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -741,27 +775,23 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #cocteles .menu-catalogo {
+#cocteles .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #cocteles .menu-catalogo .menu-card {
+#cocteles .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #cocteles .menu-catalogo .menu-card img {
+#cocteles .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
   border-radius: 30px;
   margin: 20px;
   overflow: hidden;
-  transition: 0.5;
 }
-#ordenes #cocteles .menu-catalogo .menu-cardhover .card-text {
-  transform: scale(1);
-}
-#ordenes #cocteles .menu-catalogo .menu-card .card-text {
+#cocteles .menu-catalogo .menu-card .card-text {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -770,18 +800,26 @@ footer .redes-credito div .fa-brands {
   border-radius: 30px;
   margin: 20px;
   background-color: rgba(114, 187, 83, 0.1215686275);
-  transform: scale(1);
+  transition: 0.8s;
 }
-#ordenes #cocteles .menu-catalogo .menu-card .card-text p {
+#cocteles .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   color: #fefb64;
   text-align: center;
+  transition: 0.5s;
+}
+#cocteles .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#cocteles .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1189px) {
   #menu {
     padding: 20px;
   }

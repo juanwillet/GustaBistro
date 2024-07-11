@@ -21,8 +21,9 @@
             <a href="#menu"><li>Menu</li></a>
             <a href="#licores"><li>Licores</li></a>
             <a href="#nosotros"><li>Nosotros</li></a>
-            <a href="./paginas/ordenes.html" target="_blank"><li>Ordena Online</li></a>
-            <a href="./paginas/ordenes.html" target="_blank"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            <a href="#menu"><li>Ordena Online</li></a>
+            <button id="abrir-carrito"><li><i class="fa-solid fa-cart-shopping"></i></li></button>
+            <li id="notificacion" class="notificacion-activa"></li>
         </ul>
     </nav>
     <div id="carrito" class="carrito">
@@ -33,9 +34,12 @@
       <div>
          <ul id="lista-pedidos">
            <li class="total">
+            <div><button id="borrar">Eliminar Orden <i class="fa-regular fa-circle-xmark"></i></button></div>
+           </li> 
+           <li class="total">
             <div><p>Total:</p></div>
             <div><p id="suma"></p></div>
-           </li>  
+           </li>
          </ul>
       </div>
    </div>
@@ -93,7 +97,7 @@
                  <li>Gusta Chicken Salad</li>
                  <li>Gusta Marina</li>
                  <li>Mushroom Gravy Burguer</li>
-                 <li><a href="./paginas/ordenes.html#hamburguesas" target="_blank"><button>Comprar</button></a></li>
+                 <li id="botonHamburguesas"><a href="#hamburguesas"><button>Comprar</button></a></li>
               </ul>
              </div>
             </div>
@@ -106,7 +110,7 @@
                  <li>Pasta de Pollo</li>
                  <li>Pasta en Salsa Pesto</li>
                  <li>Raviolis con Espinaca</li>
-                 <li><a href="./paginas/ordenes.html#pastas" target="_blank"><button>Comprar</button></a></li>
+                 <li id="botonPastas"><a href="#pastas"><button>Comprar</button></a></li>
                </ul>
               </div> 
             </div>
@@ -119,13 +123,151 @@
                  <li>Tocino</li>
                  <li>Margarita Tradicional</li>
                  <li>Vegetariana</li>
-                 <li><a href="./paginas/ordenes.html#pizzas" target="_blank"><button>Comprar</button></a></li>
+                 <li id="botonPizzas"><a href="#pizzas"><button>Comprar</button></a></li>
                </ul>
              </div>
             </div>
         </div>
      </div>
       </section>
+      <!-----------------------------------------atencion----------------------------------------->
+      <section id="ordenes">
+        <div class="titulo-ordenes">
+        
+     </div>
+           <section id="hamburguesas" class="hamburguesas-dos">
+               <div class="titulos-menus">
+                   <h2>Hamburguesas</h2>
+                   <button class="cerrar-menu"><a href="#menu"><i class="fa-regular fa-circle-xmark"></i></a></button>
+              </div>
+              <section class="menu-catalogo">
+               <div>
+                <div class="menu-card">
+                   <img src="../hamburguesas/hamburguesa1.jpg" alt="pollo-crispy">
+                   <div class="card-text"><p>Gustaburguer</p></div>
+                </div> 
+               </div>
+               <div>
+                   <div class="menu-card">
+                      <img src="../hamburguesas/hamburguesa2.webp" alt="gustaburguer">
+                      <div class="card-text"><p>Sweet Bacon Burguer</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../hamburguesas/hamburguesa3.jpg" alt="sweet-burguer">
+                      <div class="card-text"><p>Gusta Chicken Salad</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../hamburguesas/hamburguesa4.jpg" alt="chicken-salad-burguer">
+                      <div class="card-text"><p>Gusta Marina</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../hamburguesas/hamburguesa5.jpg" alt="hamburguesa-camarones">
+                      <div class="card-text"><p>Mushroom Gravy Burguer</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../hamburguesas/hamburguesa6.jpg" alt="mushroom-burguer">
+                      <div class="card-text"><p>Sandwich de Pollo Crispy</p></div>
+                   </div> 
+                  </div>
+               </section>
+           </section>
+           <section id="pastas" class="pastas-dos">
+               <div class="titulos-menus">
+                   <h2>Pastas</h2>
+                   <button class="cerrar-menu"><a href="#menu"><i class="fa-regular fa-circle-xmark"></i></a></button>
+              </div>
+              <section class="menu-catalogo">
+               <div>
+                <div class="menu-card">
+                   <img src="../pastas/fetuccini-alfredo.jpg" alt="fetuccini-alfredo">
+                   <div class="card-text"><p>Fetuccini Alfredo</p></div>
+                </div> 
+               </div>
+               <div>
+                   <div class="menu-card">
+                      <img src="../pastas/spaghetti-amatriciana.jpg" alt="spaghetti-amatriciana">
+                      <div class="card-text"><p>Amatriciana</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pastas/raviolis-con-tomate.jpg" alt="raviolis-con-tomate">
+                      <div class="card-text"><p>Raviolis en Salsa de Tomate</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pastas/pasta-pollo.jpg" alt="pasta-pollo">
+                      <div class="card-text"><p>Pasta de Pollo</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pastas/pesto.jpg" alt="pesto">
+                      <div class="card-text"><p>Pasta en Salsa Pesto</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pastas/raviolis-de-espinaca.jpg" alt="raviolis-de-espinaca">
+                      <div class="card-text"><p>Raviolis con Espinaca</p></div>
+                   </div> 
+                  </div>
+               </section>
+           </section>
+           <section id="pizzas" class="pizzas-dos">
+               <div class="titulos-menus">
+                   <h2>Pizzas</h2>
+                   <button class="cerrar-menu"><a href="#menu"><i class="fa-regular fa-circle-xmark"></i></a></button>
+              </div>
+              <section class="menu-catalogo">
+               <div>
+                <div class="menu-card">
+                   <img src="../pizzas/aceitunas-negras.jpg" alt="aceitunas-negras">
+                   <div class="card-text"><p>Aceitunas Negras</p></div>
+                </div> 
+               </div>
+               <div>
+                   <div class="menu-card">
+                      <img src="../pizzas/jamon.webp" alt="jamon">
+                      <div class="card-text"><p>Jamon</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pizzas/peperoni.jpg" alt="peperoni">
+                      <div class="card-text"><p>Peperoni</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pizzas/tocino.jpeg" alt="tocino">
+                      <div class="card-text"><p>Tocino</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pizzas/margarita.jpg.webp" alt="margarita">
+                      <div class="card-text"><p>Margarita Tradicional</p></div>
+                   </div> 
+                  </div>
+                  <div>
+                   <div class="menu-card">
+                      <img src="../pizzas/vegetariana.jpg" alt="vegetariana">
+                      <div class="card-text"><p>Vegetariana</p></div>
+                   </div> 
+                  </div>
+               </section>
+           </section>
+           <!-----------------------------------------atencion----------------------------------------->
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -178,7 +320,7 @@
                    <li>Cabernet Sauvignon</li>
                    <li>Vino Tinto Seco</li>
                    <li>Vino Blanco Seco</li>
-                   <li><a href="./paginas/ordenes.html#vinos" target="_blank"><button>Comprar</button></a></li>
+                   <li id="botonVinos"><a href="#vinos"><button>Comprar</button></a></li>
                </ul>
              </div>
             </div>
@@ -191,7 +333,7 @@
                   <li>Balde Zulia</li>
                   <li>Balde Polar</li>
                   <li>Heineken</li>
-                  <li><a href="./paginas/ordenes.html#cervezas" target="_blank"><button>Comprar</button></a></li>
+                  <li id="botonCervezas"><a href="#cervezas"><button>Comprar</button></a></li>
                </ul>
              </div>
             </div>
@@ -201,13 +343,129 @@
                  <li>Margarita</li>
                  <li>Mojito</li>
                  <li>Negroni</li>
-                 <li><a href="./paginas/ordenes.html#cocteles" target="_blank"><button>Comprar</button></a></li>
+                 <li id="botonCocteles"><a href="#cocteles"><button>Comprar</button></a></li>
                </ul>
               </div>
              </div>
           </div>
         </div>
       </section>
+      <!-----------------------------------------atencion----------------------------------------->
+      <section id="vinos" class="vinos-dos">
+        <div class="titulos-menus">
+            <h2>Vinos</h2>
+            <button class="cerrar-menu"><a href="#licores"><i class="fa-regular fa-circle-xmark"></i></a></button>
+       </div>
+       <section class="menu-catalogo">
+        <div>
+         <div class="menu-card">
+            <img src="../vinos/vino1.jpg.webp" alt="sauvignon-blanco">
+            <div class="card-text"><p>Sauvignon Blanco</p></div>
+         </div> 
+        </div>
+        <div>
+            <div class="menu-card">
+               <img src="../vinos/vino2.webp" alt="vino-rosado">
+               <div class="card-text"><p>Rose</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../vinos/vino3.jpg.webp" alt="merlot">
+               <div class="card-text"><p>Merlot</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../vinos/vino4.jpg.webp" alt="cabernet-sauvignon">
+               <div class="card-text"><p>Cabernet Sauvignon</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../vinos/vino5.jpeg.webp" alt="tinto-seco">
+               <div class="card-text"><p>Vino Tinto Seco</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../vinos/vino6.jpg.webp" alt="blanco-seco">
+               <div class="card-text"><p>Vino Blanco Seco</p></div>
+            </div> 
+           </div>
+        </section>
+    </section>
+    <section id="cervezas" class="cervezas-dos">
+        <div class="titulos-menus">
+            <h2>Cervezas</h2>
+            <button class="cerrar-menu"><a href="#licores"><i class="fa-regular fa-circle-xmark"></i></a></button>
+       </div>
+       <section class="menu-catalogo">
+        <div>
+         <div class="menu-card">
+            <img src="../cervezas/solera-verde.jpg" alt="cerveza-solera-verde">
+            <div class="card-text"><p>Solera Verde</p></div>
+         </div> 
+        </div>
+        <div>
+            <div class="menu-card">
+               <img src="../cervezas/solera-azul.jpg" alt="cerveza-solera-azul">
+               <div class="card-text"><p>Solera Azul</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../cervezas/corona.jpg" alt="cerveza-corona">
+               <div class="card-text"><p>Corona</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../cervezas/zulia.jpg.webp" alt="cerveza-zulia">
+               <div class="card-text"><p>Balde Zulia</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../cervezas/polar.jpg" alt="cerveza-polar">
+               <div class="card-text"><p>Balde Polar</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../cervezas/heineken.png" alt="cerveza-heineken">
+               <div class="card-text"><p>Heineken</p></div>
+            </div> 
+           </div>
+        </section>
+    </section>
+    <section id="cocteles" class="cocteles-dos">
+        <div class="titulos-menus">
+            <h2>Cocteles</h2>
+            <button class="cerrar-menu"><a href="#licores"><i class="fa-regular fa-circle-xmark"></i></a></button>
+       </div>
+       <section class="menu-catalogo">
+        <div>
+         <div class="menu-card">
+            <img src="../cocteles/margarita.jpg" alt="margarita">
+            <div class="card-text"><p>Margarita</p></div>
+         </div> 
+        </div>
+        <div>
+            <div class="menu-card">
+               <img src="../cocteles/mojito.jpg" alt="mojito">
+               <div class="card-text"><p>Mojito</p></div>
+            </div> 
+           </div>
+           <div>
+            <div class="menu-card">
+               <img src="../cocteles/negroni.webp" alt="negroni">
+               <div class="card-text"><p>Negroni</p></div>
+            </div> 
+           </div>
+        </section>
+      </section>
+      <!-----------------------------------------atencion----------------------------------------->
       <section id="nosotros">
         <div>
             <div class="nosotros-card">

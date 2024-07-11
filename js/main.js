@@ -209,6 +209,73 @@ const borrador= (item, registro)=>{
         notificacion.innerText=registroDeOrden.length
     }) 
 }
+//---------------------------------------------------------EVENTOS MENUS---------------------------------------------------------
+const botonHamburguesas= document.getElementById('botonHamburguesas')
+const botonPastas= document.getElementById("botonPastas")
+const botonPizzas= document.getElementById("botonPizzas")
+const botonVinos= document.getElementById("botonVinos")
+const botonCervezas= document.getElementById("botonCervezas")
+const botonCocteles= document.getElementById("botonCocteles")
+
+const menuHamburguesas= document.getElementById("hamburguesas")
+const menuPastas= document.getElementById("pastas")
+const menuPizzas= document.getElementById("pizzas")
+const menuVinos= document.getElementById("vinos")
+const menuCervezas= document.getElementById("cervezas")
+const menuCocteles= document.getElementById("cocteles")
+
+botonHamburguesas.addEventListener('click', ()=>{
+    menuHamburguesas.classList.toggle('hamburguesas-dos')
+    menuHamburguesas.classList.toggle('hamburguesas')
+})
+botonPastas.addEventListener('click', ()=>{
+    menuPastas.classList.toggle('pastas-dos')
+    menuPastas.classList.toggle('pastas')
+})
+botonPizzas.addEventListener('click', ()=>{
+    menuPizzas.classList.toggle('pizzas-dos')
+    menuPizzas.classList.toggle('pizzas')
+})
+botonVinos.addEventListener('click', ()=>{
+    menuVinos.classList.toggle('vinos-dos')
+    menuVinos.classList.toggle('vinos')
+})
+botonCervezas.addEventListener('click', ()=>{
+    menuCervezas.classList.toggle('cervezas-dos')
+    menuCervezas.classList.toggle('cervezas')
+})
+botonCocteles.addEventListener('click', ()=>{
+    menuCocteles.classList.toggle('cocteles-dos')
+    menuCocteles.classList.toggle('cocteles')
+})
+
+const cerrarMenu=document.getElementsByClassName('cerrar-menu')
+
+cerrarMenu[0].addEventListener('click', ()=>{
+    menuHamburguesas.classList.toggle('hamburguesas-dos')
+    menuHamburguesas.classList.toggle('hamburguesas')
+})
+cerrarMenu[1].addEventListener('click', ()=>{
+    menuPastas.classList.toggle('pastas-dos')
+    menuPastas.classList.toggle('pastas')  
+})
+cerrarMenu[2].addEventListener('click', ()=>{
+    menuPizzas.classList.toggle('pizzas-dos')
+    menuPizzas.classList.toggle('pizzas') 
+})
+cerrarMenu[3].addEventListener('click', ()=>{
+    menuVinos.classList.toggle('vinos-dos')
+    menuVinos.classList.toggle('vinos')  
+})
+cerrarMenu[4].addEventListener('click', ()=>{
+    menuCervezas.classList.toggle('cervezas-dos')
+    menuCervezas.classList.toggle('cervezas')  
+})
+cerrarMenu[5].addEventListener('click', ()=>{
+    menuCocteles.classList.toggle('cocteles-dos')
+    menuCocteles.classList.toggle('cocteles') 
+})
+
 //---------------------------------------------------------EVENTOS PRODUCTOS----------------------------------------------------
 const clasificador=(seccion, comida)=>{
     const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
@@ -237,7 +304,7 @@ const burguerChickenSalad= menuCard[2].addEventListener('click', ()=>{
 clasificador (hamburguesas, 'Gusta chicken salad')
 })
 const burguerMarina= menuCard[3].addEventListener('click', ()=>{
-clasificador(hamburguesas,'Gusta chicken salad')
+clasificador(hamburguesas,'Gusta marina')
 })
 const burguerMushroomGravy= menuCard[4].addEventListener('click', ()=>{
 clasificador(hamburguesas, 'Mushroom gravy burguer')
@@ -350,3 +417,4 @@ if(registroDeOrden.length!==0){
     }
 }
 notificacionRecuperada()
+

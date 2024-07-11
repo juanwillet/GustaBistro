@@ -445,7 +445,7 @@ footer .redes-credito div .fa-brands {
 }
 
 #ordenes {
-  padding: 20px;
+  padding: 0;
   background-color: #FEFB64;
 }
 #ordenes .titulo-ordenes {
@@ -463,15 +463,16 @@ footer .redes-credito div .fa-brands {
   color: #FF6624;
   padding: 50px;
 }
-#ordenes #hamburguesas {
+#ordenes .hamburguesas-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #FF6624;
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #hamburguesas h2 {
+#ordenes .hamburguesas-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -479,15 +480,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #hamburguesas .menu-catalogo {
+#ordenes .hamburguesas-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card img {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -495,7 +496,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card .card-text {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -506,7 +507,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(187, 112, 83, 0.1647058824);
   transition: 0.8s;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card .card-text p {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -515,22 +516,23 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card .card-text :hover {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#ordenes #hamburguesas .menu-catalogo .menu-card :hover {
+#ordenes .hamburguesas-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(190, 103, 56, 0.5176470588);
 }
-#ordenes #pastas {
+#ordenes .pastas-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #FF6624;
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #pastas h2 {
+#ordenes .pastas-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -538,15 +540,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #pastas .menu-catalogo {
+#ordenes .pastas-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #pastas .menu-catalogo .menu-card {
+#ordenes .pastas-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #pastas .menu-catalogo .menu-card img {
+#ordenes .pastas-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -554,7 +556,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#ordenes #pastas .menu-catalogo .menu-card .card-text {
+#ordenes .pastas-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -565,7 +567,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(187, 112, 83, 0.1960784314);
   transition: 0.8s;
 }
-#ordenes #pastas .menu-catalogo .menu-card .card-text p {
+#ordenes .pastas-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -574,22 +576,23 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#ordenes #pastas .menu-catalogo .menu-card .card-text :hover {
+#ordenes .pastas-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#ordenes #pastas .menu-catalogo .menu-card :hover {
+#ordenes .pastas-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(190, 103, 56, 0.5176470588);
 }
-#ordenes #pizzas {
+#ordenes .pizzas-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #FF6624;
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #pizzas h2 {
+#ordenes .pizzas-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -597,15 +600,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #pizzas .menu-catalogo {
+#ordenes .pizzas-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #pizzas .menu-catalogo .menu-card {
+#ordenes .pizzas-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #pizzas .menu-catalogo .menu-card img {
+#ordenes .pizzas-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -613,7 +616,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#ordenes #pizzas .menu-catalogo .menu-card .card-text {
+#ordenes .pizzas-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -624,7 +627,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(187, 112, 83, 0.1960784314);
   transition: 0.8s;
 }
-#ordenes #pizzas .menu-catalogo .menu-card .card-text p {
+#ordenes .pizzas-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -633,22 +636,23 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#ordenes #pizzas .menu-catalogo .menu-card .card-text :hover {
+#ordenes .pizzas-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#ordenes #pizzas .menu-catalogo .menu-card :hover {
+#ordenes .pizzas-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(190, 103, 56, 0.5176470588);
 }
-#ordenes #vinos {
+#ordenes .vinos-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #72BB53;
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #vinos h2 {
+#ordenes .vinos-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -656,15 +660,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #vinos .menu-catalogo {
+#ordenes .vinos-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #vinos .menu-catalogo .menu-card {
+#ordenes .vinos-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #vinos .menu-catalogo .menu-card img {
+#ordenes .vinos-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -672,7 +676,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#ordenes #vinos .menu-catalogo .menu-card .card-text {
+#ordenes .vinos-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -683,7 +687,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(114, 187, 83, 0.1607843137);
   transition: 0.8s;
 }
-#ordenes #vinos .menu-catalogo .menu-card .card-text p {
+#ordenes .vinos-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -692,22 +696,23 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#ordenes #vinos .menu-catalogo .menu-card .card-text :hover {
+#ordenes .vinos-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#ordenes #vinos .menu-catalogo .menu-card :hover {
+#ordenes .vinos-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(56, 190, 143, 0.5176470588);
 }
-#ordenes #cervezas {
+#ordenes .cervezas-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #72BB53;
   border-radius: 40px;
   margin: 30px;
 }
-#ordenes #cervezas h2 {
+#ordenes .cervezas-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -715,15 +720,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#ordenes #cervezas .menu-catalogo {
+#ordenes .cervezas-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#ordenes #cervezas .menu-catalogo .menu-card {
+#ordenes .cervezas-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#ordenes #cervezas .menu-catalogo .menu-card img {
+#ordenes .cervezas-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -731,7 +736,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#ordenes #cervezas .menu-catalogo .menu-card .card-text {
+#ordenes .cervezas-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -742,7 +747,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(114, 187, 83, 0.1176470588);
   transition: 0.8s;
 }
-#ordenes #cervezas .menu-catalogo .menu-card .card-text p {
+#ordenes .cervezas-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -751,23 +756,23 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#ordenes #cervezas .menu-catalogo .menu-card .card-text :hover {
+#ordenes .cervezas-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#ordenes #cervezas .menu-catalogo .menu-card :hover {
+#ordenes .cervezas-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(56, 190, 143, 0.5176470588);
 }
-
-#cocteles {
+#ordenes .cocteles-dos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
   background-color: #72BB53;
   border-radius: 40px;
   margin: 30px;
 }
-#cocteles h2 {
+#ordenes .cocteles-dos h2 {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -775,15 +780,15 @@ footer .redes-credito div .fa-brands {
   color: #FEFB64;
   padding: 50px;
 }
-#cocteles .menu-catalogo {
+#ordenes .cocteles-dos .menu-catalogo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 70px;
 }
-#cocteles .menu-catalogo .menu-card {
+#ordenes .cocteles-dos .menu-catalogo .menu-card {
   position: relative;
 }
-#cocteles .menu-catalogo .menu-card img {
+#ordenes .cocteles-dos .menu-catalogo .menu-card img {
   width: 350px;
   height: 250px;
   object-fit: cover;
@@ -791,7 +796,7 @@ footer .redes-credito div .fa-brands {
   margin: 20px;
   overflow: hidden;
 }
-#cocteles .menu-catalogo .menu-card .card-text {
+#ordenes .cocteles-dos .menu-catalogo .menu-card .card-text {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -802,7 +807,7 @@ footer .redes-credito div .fa-brands {
   background-color: rgba(114, 187, 83, 0.1215686275);
   transition: 0.8s;
 }
-#cocteles .menu-catalogo .menu-card .card-text p {
+#ordenes .cocteles-dos .menu-catalogo .menu-card .card-text p {
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   font-size: xx-large;
@@ -811,14 +816,464 @@ footer .redes-credito div .fa-brands {
   text-align: center;
   transition: 0.5s;
 }
-#cocteles .menu-catalogo .menu-card .card-text :hover {
+#ordenes .cocteles-dos .menu-catalogo .menu-card .card-text :hover {
   background-color: rgba(187, 112, 83, 0);
   color: #fff700;
 }
-#cocteles .menu-catalogo .menu-card :hover {
+#ordenes .cocteles-dos .menu-catalogo .menu-card :hover {
   background-color: rgba(56, 190, 143, 0.5176470588);
 }
 
+/*--------------------------copia de estilos
+------------------------------------------*/
+#ordenes {
+  padding: 0;
+  background-color: #FEFB64;
+}
+#ordenes .titulo-ordenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E2EE79;
+  border-radius: 40px;
+}
+#ordenes .titulo-ordenes h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FF6624;
+  padding: 50px;
+}
+#ordenes .hamburguesas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF6624;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .hamburguesas .titulos-menus {
+  display: flex;
+}
+#ordenes .hamburguesas .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .hamburguesas .titulos-menus button {
+  background-color: #FF6624;
+  outline: none;
+  border: none;
+}
+#ordenes .hamburguesas .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .hamburguesas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(187, 112, 83, 0.1647058824);
+  transition: 0.8s;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .hamburguesas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
+}
+#ordenes .pastas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF6624;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .pastas .titulos-menus {
+  display: flex;
+}
+#ordenes .pastas .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .pastas .titulos-menus button {
+  background-color: #FF6624;
+  outline: none;
+  border: none;
+}
+#ordenes .pastas .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .pastas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .pastas .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .pastas .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .pastas .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(187, 112, 83, 0.1960784314);
+  transition: 0.8s;
+}
+#ordenes .pastas .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .pastas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .pastas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
+}
+#ordenes .pizzas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF6624;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .pizzas .titulos-menus {
+  display: flex;
+}
+#ordenes .pizzas .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .pizzas .titulos-menus button {
+  background-color: #FF6624;
+  outline: none;
+  border: none;
+}
+#ordenes .pizzas .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .pizzas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .pizzas .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .pizzas .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .pizzas .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(187, 112, 83, 0.1960784314);
+  transition: 0.8s;
+}
+#ordenes .pizzas .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .pizzas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .pizzas .menu-catalogo .menu-card :hover {
+  background-color: rgba(190, 103, 56, 0.5176470588);
+}
+#ordenes .vinos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #72BB53;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .vinos .titulos-menus {
+  display: flex;
+}
+#ordenes .vinos .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .vinos .titulos-menus button {
+  background-color: #72BB53;
+  outline: none;
+  border: none;
+}
+#ordenes .vinos .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .vinos .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .vinos .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .vinos .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .vinos .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(114, 187, 83, 0.1607843137);
+  transition: 0.8s;
+}
+#ordenes .vinos .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .vinos .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .vinos .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
+}
+#ordenes .cervezas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #72BB53;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .cervezas .titulos-menus {
+  display: flex;
+}
+#ordenes .cervezas .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .cervezas .titulos-menus button {
+  background-color: #72BB53;
+  outline: none;
+  border: none;
+}
+#ordenes .cervezas .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .cervezas .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .cervezas .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .cervezas .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .cervezas .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(114, 187, 83, 0.1176470588);
+  transition: 0.8s;
+}
+#ordenes .cervezas .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .cervezas .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .cervezas .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
+}
+#ordenes .cocteles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #72BB53;
+  border-radius: 40px;
+  margin: 30px;
+}
+#ordenes .cocteles .titulos-menus {
+  display: flex;
+}
+#ordenes .cocteles .titulos-menus h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #FEFB64;
+  padding: 50px;
+}
+#ordenes .cocteles .titulos-menus button {
+  background-color: #72BB53;
+  outline: none;
+  border: none;
+}
+#ordenes .cocteles .titulos-menus button a .fa-regular {
+  color: #FEFB64;
+  font-size: 25px;
+}
+#ordenes .cocteles .menu-catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 70px;
+}
+#ordenes .cocteles .menu-catalogo .menu-card {
+  position: relative;
+}
+#ordenes .cocteles .menu-catalogo .menu-card img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+}
+#ordenes .cocteles .menu-catalogo .menu-card .card-text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  margin: 20px;
+  background-color: rgba(114, 187, 83, 0.1215686275);
+  transition: 0.8s;
+}
+#ordenes .cocteles .menu-catalogo .menu-card .card-text p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: xx-large;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  color: #fefb64;
+  text-align: center;
+  transition: 0.5s;
+}
+#ordenes .cocteles .menu-catalogo .menu-card .card-text :hover {
+  background-color: rgba(187, 112, 83, 0);
+  color: #fff700;
+}
+#ordenes .cocteles .menu-catalogo .menu-card :hover {
+  background-color: rgba(56, 190, 143, 0.5176470588);
+}
+
+/*copia de estilos------------------------
+-----------------------------------------*/
 @media (max-width: 1189px) {
   #menu {
     padding: 20px;

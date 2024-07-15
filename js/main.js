@@ -209,6 +209,59 @@ const borrador= (item, registro)=>{
         notificacion.innerText=registroDeOrden.length
     }) 
 }
+//---------------------------------------------------------SIMULADOR API EN MENU----------------------------------------------------
+const divTitulo= document.getElementsByClassName("card-text")
+
+const armadorMenu= (array, comida, numero)=>{
+    const objeto= array.find(ele=> ele.titulo.includes(comida))
+    let img= document.createElement("img")
+    img.src= objeto.imagen
+    menuCard[numero].appendChild(img)
+    divTitulo[parseInt(numero)].innerHTML+=`<p>${objeto.titulo}</p>`
+}
+const recopiladorData= async (url, comida, numero)=>{
+const resp= await fetch(url)
+const data= await resp.json()
+armadorMenu(data, comida, numero)
+}
+
+recopiladorData("./data.json","Gustaburguer","0")
+recopiladorData("./data.json","Sweet Bacon Burguer","1")
+recopiladorData("./data.json","Gusta Chicken Salad","2")
+recopiladorData("./data.json","Gusta Marina","3")
+recopiladorData("./data.json","Mushroom Gravy Burguer","4")
+recopiladorData("./data.json","Sandwich de Pollo Crispy","5")
+recopiladorData("./data.json","Fetuccini Alfredo","6")
+recopiladorData("./data.json","Amatriciana","7")
+recopiladorData("./data.json","Raviolis en Salsa de Tomate","8")
+recopiladorData("./data.json","Pasta de Pollo","9")
+recopiladorData("./data.json","Pasta en Salsa Pesto","10")
+recopiladorData("./data.json","Raviolis con Espinaca","11")
+recopiladorData("./data.json","Aceitunas Negras","12")
+recopiladorData("./data.json","Jamon","13")
+recopiladorData("./data.json","Peperoni","14")
+recopiladorData("./data.json","Tocino","15")
+recopiladorData("./data.json","Margarita Tradicional","16")
+recopiladorData("./data.json","Vegetariana","17")
+recopiladorData("./data.json","Sauvignon Blanco","18")
+recopiladorData("./data.json","Rose","19")
+recopiladorData("./data.json","Merlot","20")
+recopiladorData("./data.json","Cabernet Sauvignon","21")
+recopiladorData("./data.json","Vino Tinto Seco","22")
+recopiladorData("./data.json","Vino Blanco Seco","23")
+recopiladorData("./data.json","Solera Verde","24")
+recopiladorData("./data.json","Solera Azul","25")
+recopiladorData("./data.json","Corona","26")
+recopiladorData("./data.json","Balde Zulia","27")
+recopiladorData("./data.json","Balde Polar","28")
+recopiladorData("./data.json","Heineken","29")
+recopiladorData("./data.json","Margarita","30")
+recopiladorData("./data.json","Mojito","31")
+recopiladorData("./data.json","Negroni","32")
+
+
+
+
 //---------------------------------------------------------EVENTOS MENUS---------------------------------------------------------
 const botonHamburguesas= document.getElementById('botonHamburguesas')
 const botonPastas= document.getElementById("botonPastas")
@@ -417,4 +470,5 @@ if(registroDeOrden.length!==0){
     }
 }
 notificacionRecuperada()
+
 

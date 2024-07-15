@@ -1,0 +1,134 @@
+[
+{
+    "titulo": "Gustaburguer",
+    "imagen": "hamburguesas/hamburguesa1.jpg"  
+},
+{
+    "titulo": "Sweet Bacon Burguer",
+    "imagen": "hamburguesas/hamburguesa2.webp"  
+},
+{
+    "titulo": "Gusta Chicken Salad",
+    "imagen": "hamburguesas/hamburguesa3.jpg"  
+},
+{
+    "titulo": "Gusta Marina",
+    "imagen": "hamburguesas/hamburguesa4.jpg"  
+},
+{
+    "titulo": "Mushroom Gravy Burguer",
+    "imagen": "hamburguesas/hamburguesa5.jpg"  
+},
+{
+    "titulo": "Sandwich de Pollo Crispy",
+    "imagen": "hamburguesas/hamburguesa6.jpg"  
+},
+{
+    "titulo": "Fetuccini Alfredo",
+    "imagen": "pastas/fetuccini-alfredo.jpg"  
+},
+{
+    "titulo": "Amatriciana",
+    "imagen": "pastas/spaghetti-amatriciana.jpg"  
+},
+{
+    "titulo": "Raviolis en Salsa de Tomate",
+    "imagen": "pastas/raviolis-con-tomate.jpg"  
+},
+{
+    "titulo": "Pasta de Pollo",
+    "imagen": "pastas/pasta-pollo.jpg"  
+},
+{
+    "titulo": "Pasta en Salsa Pesto",
+    "imagen": "pastas/pesto.jpg"  
+},
+{
+    "titulo": "Raviolis con Espinaca",
+    "imagen": "pastas/raviolis-de-espinaca.jpg"  
+},
+{
+    "titulo": "Aceitunas Negras",
+    "imagen": "pizzas/aceitunas-negras.jpg"  
+},
+{
+    "titulo": "Jamon",
+    "imagen": "pizzas/jamon.webp"  
+},
+{
+    "titulo": "Peperoni",
+    "imagen": "pizzas/peperoni.jpg"  
+},
+{
+    "titulo": "Tocino",
+    "imagen": "pizzas/tocino.jpeg"  
+},
+{
+    "titulo": "Margarita Tradicional",
+    "imagen": "pizzas/margarita.jpg.webp"  
+},
+{
+    "titulo": "Vegetariana",
+    "imagen": "pizzas/vegetariana.jpg"  
+},
+{
+    "titulo": "Sauvignon Blanco",
+    "imagen": "vinos/vino1.jpg.webp"  
+},
+{
+    "titulo": "Rose",
+    "imagen": "vinos/vino2.webp"  
+},
+{
+    "titulo": "Merlot",
+    "imagen": "vinos/vino3.jpg.webp"  
+},
+{
+    "titulo": "Cabernet Sauvignon",
+    "imagen": "vinos/vino4.jpg.webp"  
+},
+{
+    "titulo": "Vino Tinto Seco",
+    "imagen": "vinos/vino5.jpeg.webp"  
+},
+{
+    "titulo": "Vino Blanco Seco",
+    "imagen": "vinos/vino6.jpg.webp"  
+},
+{
+    "titulo": "Solera Verde",
+    "imagen": "cervezas/solera-verde.jpg"  
+},
+{
+    "titulo": "Solera Azul",
+    "imagen": "cervezas/solera-azul.jpg"  
+},
+{
+    "titulo": "Corona",
+    "imagen": "cervezas/corona.jpg"  
+},
+{
+    "titulo": "Balde Zulia",
+    "imagen": "cervezas/zulia.jpg.webp"  
+},
+{
+    "titulo": "Balde Polar",
+    "imagen": "cervezas/polar.jpg"  
+},
+{
+    "titulo": "Heineken",
+    "imagen": "cervezas/heineken.png"  
+},
+{
+    "titulo": "Margarita",
+    "imagen": "cocteles/margarita.jpg"  
+},
+{
+    "titulo": "Mojito",
+    "imagen": "cocteles/mojito.jpg"  
+},
+{
+    "titulo": "Negroni",
+    "imagen": "cocteles/negroni.webp"  
+}
+]

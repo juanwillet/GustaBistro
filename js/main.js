@@ -1,171 +1,158 @@
-//---------------------------------------------------------HAMBURGUESAS---------------------------------------------------------
-const sandwichPolloCrispy = {
-    nombre: 'Sandwich de pollo crispy',
-    precio: 15
-}
-const gustaBurguer={
-    nombre: 'Gusta burguer',
-    precio: 15
-}
-const sweetBaconBurguer={
-    nombre: 'Sweet bacon burguer',
-    precio: 15
-}
-const gustaChickenSalad={
-    nombre: 'Gusta chicken salad',
-    precio: 15
-}
-const gustaMarina={
-    nombre: 'Gusta marina',
-    precio: 15
-}
-const mushroomGravyBurguer={
-    nombre: 'Mushroom gravy burguer',
-    precio: 15
-}
-
-
-//---------------------------------------------------------PASTAS---------------------------------------------------------
-const fetucciniAlfredo={
-    nombre: 'Fetuccini alfredo',
-    precio: 18
-}
-const amatriciana={
-    nombre: 'Amatriciana',
-    precio: 18
-}
-const raviolisSalsaDeTomate={
-    nombre: 'Raviolis en salsa de tomate',
-    precio: 18
-}
-const polloPasta={
-    nombre: 'Pasta de pollo',
-    precio: 18
-}
-const pestoPasta={
-    nombre: 'Pasta en salsa pesto',
-    precio: 18
-}
-const raviolisEspinaca={
-    nombre: 'Raviolis con espinaca',
-    precio: 18
-}
-
-
-//---------------------------------------------------------PIZZAS---------------------------------------------------------
-const margaritaTradicional={
-    nombre: 'Margarita',
-    precio: 15
-}
-const ingredienteAceitesNegras={
-    nombre: 'Aceitunas negras',
-    precio: 17
-}
-const ingredienteJamon={
-    nombre: 'Jamon',
-    precio: 19
-}
-const ingredientePeperoni={
-    nombre: 'Peperoni',
-    precio: 20
-}
-const ingredienteTocino={
-    nombre: 'Tocino',
-    precio: 25
-}
-const ingredienteVegetales={
-    nombre: 'Vegetariana',
-    precio: 18
-}
-
-//---------------------------------------------------------VINOS---------------------------------------------------------
-const sauvignonBlanco={
-    nombre: 'Sauvignon blanco',
-    precio: 18
-}
-const rose={
-    nombre: 'Rose',
-    precio: 18
-}
-const merlot={
-    nombre: 'Merlot',
-    precio: 18
-}
-const cabernetSauvignon={
-    nombre: 'Cabernet sauvignon',
-    precio: 18
-}
-const vinoTintoSeco={
-    nombre: 'Vino tinto seco',
-    precio: 18
-}
-const vinoTintoBlanco={
-    nombre: 'Vino blanco seco',
-    precio: 18
-}
-
-
-//---------------------------------------------------------CERVEZAS---------------------------------------------------------
-const soleraVerde={
-    nombre: 'Solera verde',
-    precio: 3,
-    cantidad: 1
-}
-const soleraAzul={
-    nombre: 'Solera azul',
-    precio: 3,
-    cantidad: 1
-}
-const corona={
-    nombre: 'Corona',
-    precio: 4,
-    cantidad: 1
-}
-const baldeZulia={
-    nombre: 'Balde zulia',
-    precio: 18,
-    cantidad: 12
-}
-const baldePolar={
-    nombre: 'Balde polar',
-    precio: 18,
-    cantidad: 12
-}
-const heineken={
-    nombre: 'Heineken',
-    precio: 5,
-    cantidad: 1
-}
-
-
-//---------------------------------------------------------COCTELES---------------------------------------------------------
-const margarita={
-    nombre: 'Margarita',
-    precio: 10,
-    cantidad: 1
-}
-const mojito={
-    nombre: 'Mojito',
-    precio: 8,
-    cantidad: 1
-}
-const negroni={
-    nombre: 'Negroni',
-    precio: 10,
-    cantidad: 1 
-}
-
 //---------------------------------------------------------MENU---------------------------------------------------------
-const cocteles= [margarita, mojito, negroni]
-const cervezas= [soleraVerde, soleraAzul, corona, baldeZulia, baldePolar, heineken]
-const vinos= [sauvignonBlanco, rose, merlot, cabernetSauvignon, vinoTintoSeco, vinoTintoBlanco]
-const pizzas= [margaritaTradicional, ingredienteAceitesNegras, ingredienteJamon, ingredientePeperoni, ingredienteTocino, ingredienteVegetales]
-const pastas= [fetucciniAlfredo, amatriciana, raviolisSalsaDeTomate, polloPasta, pestoPasta, raviolisEspinaca]
-const hamburguesas =[sandwichPolloCrispy, gustaBurguer, sweetBaconBurguer, gustaChickenSalad, gustaMarina, mushroomGravyBurguer]
-
-
-//---------------------------------------------------------ORDENES---------------------------------------------------------
-
+const cocteles= [
+    {
+        nombre: 'Margarita',
+        precio: 10,
+        cantidad: 1
+    },
+    {
+        nombre: 'Mojito',
+        precio: 8,
+        cantidad: 1
+    },
+    {
+        nombre: 'Negroni',
+        precio: 10,
+        cantidad: 1 
+    }
+]
+const cervezas= [
+    {
+        nombre: 'Solera verde',
+        precio: 3,
+        cantidad: 1
+    },
+    {
+        nombre: 'Solera azul',
+        precio: 3,
+        cantidad: 1
+    },
+    {
+        nombre: 'Corona',
+        precio: 4,
+        cantidad: 1
+    },
+    {
+        nombre: 'Balde zulia',
+        precio: 18,
+        cantidad: 12
+    },
+    {
+        nombre: 'Balde polar',
+        precio: 18,
+        cantidad: 12
+    },
+    {
+        nombre: 'Heineken',
+        precio: 5,
+        cantidad: 1
+    }
+]
+const vinos= [
+    {
+        nombre: 'Sauvignon blanco',
+        precio: 18
+    },
+    {
+        nombre: 'Rose',
+        precio: 18
+    },
+    {
+        nombre: 'Merlot',
+        precio: 18
+    },
+    {
+        nombre: 'Cabernet sauvignon',
+        precio: 18
+    },
+    {
+        nombre: 'Vino tinto seco',
+        precio: 18
+    },
+    {
+        nombre: 'Vino blanco seco',
+        precio: 18
+    }
+]
+const pizzas= [
+    {
+        nombre: 'Tradicional',
+        precio: 15
+    },
+    {
+        nombre: 'Aceitunas negras',
+        precio: 17
+    },
+    {
+        nombre: 'Jamon',
+        precio: 19
+    },
+    {
+        nombre: 'Peperoni',
+        precio: 20
+    },
+    {
+        nombre: 'Tocino',
+        precio: 25
+    },
+    {
+        nombre: 'Vegetariana',
+        precio: 18
+    }
+]
+const pastas= [
+    {
+        nombre: 'Fetuccini alfredo',
+        precio: 18
+    },
+    {
+        nombre: 'Amatriciana',
+        precio: 18
+    },
+    {
+        nombre: 'Raviolis en salsa de tomate',
+        precio: 18
+    },
+    {
+        nombre: 'Pasta de pollo',
+        precio: 18
+    },
+    {
+        nombre: 'Pasta en salsa pesto',
+        precio: 18
+    },
+    {
+        nombre: 'Raviolis con espinaca',
+        precio: 18
+    }
+]
+const hamburguesas =[
+    {
+        nombre: 'Sandwich de pollo crispy',
+        precio: 15
+    },
+    {
+        nombre: 'Gusta burguer',
+        precio: 15
+    },
+    {
+        nombre: 'Sweet bacon burguer',
+        precio: 15
+    },
+    {
+        nombre: 'Gusta chicken salad',
+        precio: 15
+    },
+    {
+        nombre: 'Gusta marina',
+        precio: 15
+    },
+    {
+        nombre: 'Mushroom gravy burguer',
+        precio: 15
+    }
+]
+//---------------------------------------------------------CUENTA TOTAL---------------------------------------------------------
 let total=0
 const sumadora= (entrada)=>{
 let nuevoTotal=total+entrada
@@ -197,7 +184,6 @@ const menuCard= document.getElementsByClassName('menu-card')
 const listaPedidos= document.getElementById('lista-pedidos')
 const suma= document.getElementById('suma')
 
-
 const borrador= (item, registro)=>{
     const boton= document.getElementById('borrar')
     boton.addEventListener('click', ()=>{
@@ -224,7 +210,6 @@ const resp= await fetch(url)
 const data= await resp.json()
 armadorMenu(data, comida, numero)
 }
-
 recopiladorData("./data.json","Gustaburguer","0")
 recopiladorData("./data.json","Sweet Bacon Burguer","1")
 recopiladorData("./data.json","Gusta Chicken Salad","2")
@@ -258,10 +243,6 @@ recopiladorData("./data.json","Heineken","29")
 recopiladorData("./data.json","Margarita","30")
 recopiladorData("./data.json","Mojito","31")
 recopiladorData("./data.json","Negroni","32")
-
-
-
-
 //---------------------------------------------------------EVENTOS MENUS---------------------------------------------------------
 const botonHamburguesas= document.getElementById('botonHamburguesas')
 const botonPastas= document.getElementById("botonPastas")
@@ -328,7 +309,6 @@ cerrarMenu[5].addEventListener('click', ()=>{
     menuCocteles.classList.toggle('cocteles-dos')
     menuCocteles.classList.toggle('cocteles') 
 })
-
 //---------------------------------------------------------EVENTOS PRODUCTOS----------------------------------------------------
 const clasificador=(seccion, comida)=>{
     const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
@@ -346,6 +326,28 @@ const clasificador=(seccion, comida)=>{
     if(registroDeOrden.length==0){
         notificacion.innerText=registroDeOrden.length
     }
+    /*const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
+    const coincidencia= registroDeOrden.find(ele=> ele.nombre===eleccionMenu.nombre)
+    if(coincidencia){
+
+    suma.innerHTML=sumadora(eleccionMenu.precio)
+    }
+    else{
+     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
+    eleccion=eleccionMenu
+    registroDeOrden.push(eleccion)
+    const pedido= document.createElement('li')
+    pedido.innerHTML= datosEleccion 
+    listaPedidos.appendChild(pedido)
+    //pedido.classList('gusta')
+    localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
+    borrador(pedido, eleccionMenu)  
+    suma.innerHTML=sumadora(eleccionMenu.precio)
+    notificacion.innerText=registroDeOrden.length
+    if(registroDeOrden.length==0){
+        notificacion.innerText=registroDeOrden.length
+    }
+    }*/
 }
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
 clasificador(hamburguesas, 'Gusta burguer')
@@ -396,7 +398,7 @@ const pizzaTocino= menuCard[15].addEventListener('click', ()=>{
 clasificador(pizzas, 'Tocino')
 })
 const pizzaMargarita= menuCard[16].addEventListener('click', ()=>{
-clasificador(pizzas, 'Margarita')
+clasificador(pizzas, 'Tradicional')
 })
 const pizzaVegetariana= menuCard[17].addEventListener('click', ()=>{
 clasificador(pizzas, 'Vegetariana')

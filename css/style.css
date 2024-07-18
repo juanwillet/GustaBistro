@@ -31,15 +31,6 @@ header .carrito-abierto div {
   justify-content: space-between;
   margin: 10px;
 }
-header .carrito-abierto div h2 {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 900;
-  font-size: xx-large;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
-  font-size: x-large;
-  color: #FEFB64;
-  border-radius: 15px;
-}
 header .carrito-abierto div button {
   background-color: #FF6624;
   outline: none;
@@ -48,6 +39,7 @@ header .carrito-abierto div button {
 header .carrito-abierto div button .fa-regular {
   color: #FEFB64;
   font-size: 25px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
 }
 header .carrito-abierto div ul {
   list-style: none;
@@ -84,6 +76,26 @@ header .carrito-abierto div ul .total div button {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   font-size: x-large;
   color: #FEFB64;
+  transition: 0.5s;
+}
+header .carrito-abierto div ul .total div :hover {
+  font-size: x-large;
+}
+header .carrito-abierto div .compraFinalizada {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: #FEFB64;
+  background-color: #72BB53;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  padding: 10px;
+  transition: 0.5s;
+}
+header .carrito-abierto div :hover {
+  font-size: x-large;
 }
 header nav {
   display: flex;

@@ -54,12 +54,6 @@ header {
             display: flex;
             justify-content: space-between;
             margin: 10px;
-            h2{
-                @include font-style(); 
-                font-size: x-large;
-                color: $yellow;
-                border-radius: 15px; 
-            }
             button{
                 background-color: $orange;
                 outline: none;
@@ -67,6 +61,7 @@ header {
                .fa-regular{
                 color: $yellow;
                 font-size: 25px;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
                } 
             }
             ul{
@@ -92,9 +87,29 @@ header {
                             @include font-style();
                             font-size: x-large;
                             color: $yellow;
+                            transition: 0.5s;
+                        }
+                        & :hover {
+                            font-size: x-large;
                         }
                     }
                 }
+            }
+            .compraFinalizada{
+                outline: none;
+                border: none;
+                border-radius: 15px;
+                color: $yellow;
+                background-color: $primary-green;
+                font-family: $main-font;
+                font-weight: 1000;
+                font-size: larger;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+                padding: 10px; 
+                transition: 0.5s;  
+            }
+            & :hover {
+                font-size: x-large;
             }
         }
     }

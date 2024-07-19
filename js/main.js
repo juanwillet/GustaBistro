@@ -76,27 +76,27 @@ const vinos= [
 ]
 const pizzas= [
     {
-        nombre: 'Tradicional',
+        nombre: 'Pizza Tradicional',
         precio: 15
     },
     {
-        nombre: 'Aceitunas negras',
+        nombre: 'Pizza de Aceitunas negras',
         precio: 17
     },
     {
-        nombre: 'Jamon',
+        nombre: 'Pizza de Jamon',
         precio: 19
     },
     {
-        nombre: 'Peperoni',
+        nombre: 'Pizza de Peperoni',
         precio: 20
     },
     {
-        nombre: 'Tocino',
+        nombre: 'Pizza de Tocino',
         precio: 25
     },
     {
-        nombre: 'Vegetariana',
+        nombre: 'Pizza Vegetariana',
         precio: 18
     }
 ]
@@ -326,6 +326,17 @@ const clasificador=(seccion, comida)=>{
     if(registroDeOrden.length==0){
         notificacion.innerText=registroDeOrden.length
     }
+    Swal.fire({
+        text: eleccionMenu.nombre+" ha sido agregado al carrito",
+        showConfirmButton: false,
+        timerProgressBar: true,
+        color:'#FF6624',
+        icon: "success",
+        toast: true,
+        position:'top-end',
+        background:'#E2EE79',
+        iconColor:'#FF6624',
+      });
     /*const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
     const coincidencia= registroDeOrden.find(ele=> ele.nombre===eleccionMenu.nombre)
     if(coincidencia){
@@ -386,22 +397,22 @@ const pastaRaviolisEspinaca= menuCard[11].addEventListener('click', ()=>{
 clasificador(pastas, 'Raviolis con espinaca')
 })
 const pizzaAceitunas= menuCard[12].addEventListener('click', ()=>{
-clasificador(pizzas, 'Aceitunas negras')
+clasificador(pizzas, 'Pizza de Aceitunas negras')
 })
 const pizzaJamon= menuCard[13].addEventListener('click', ()=>{
-clasificador(pizzas, 'Jamon')
+clasificador(pizzas, 'Pizza de Jamon')
 })
 const pizzaPeperoni= menuCard[14].addEventListener('click', ()=>{
-clasificador(pizzas, 'Peperoni')
+clasificador(pizzas, 'Pizza de Peperoni')
 })
 const pizzaTocino= menuCard[15].addEventListener('click', ()=>{
-clasificador(pizzas, 'Tocino')
+clasificador(pizzas, 'Pizza de Tocino')
 })
 const pizzaMargarita= menuCard[16].addEventListener('click', ()=>{
-clasificador(pizzas, 'Tradicional')
+clasificador(pizzas, 'Pizza Tradicional')
 })
 const pizzaVegetariana= menuCard[17].addEventListener('click', ()=>{
-clasificador(pizzas, 'Vegetariana')
+clasificador(pizzas, 'Pizza Vegetariana')
 })
 const vinoSauvignon= menuCard[18].addEventListener('click', ()=>{
 clasificador(vinos, 'Sauvignon blanco')

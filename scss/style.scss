@@ -29,6 +29,12 @@ $secondary-green: #E2EE79;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 70px;
 }
+.swal2-html-container {
+    font-family: $main-font !important;
+    font-weight: 900 !important;;
+    font-size:medium !important;
+    text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.437) !important;
+  }
 header {
     position: sticky;
     top: 0;
@@ -45,7 +51,6 @@ header {
         background-color: $primary-green;
         display: flex;
         flex-direction: column;
-        
         padding: 10px;
         div{
             background-color: $orange;

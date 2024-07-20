@@ -109,7 +109,7 @@ header .carrito-abierto div .compraFinalizada {
   transition: 0.5s;
 }
 header .carrito-abierto div :hover {
-  font-size: x-large;
+  font-size: large;
 }
 header nav {
   display: flex;

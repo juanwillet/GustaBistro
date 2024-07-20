@@ -169,6 +169,7 @@ const carrito= document.getElementById('carrito')
 const abrirCarrito= document.getElementById('abrir-carrito')
 const cerrarCarrito= document.getElementById('cerrar-carrito')
 const notificacion= document.getElementById("notificacion")
+const finalCompra= document.getElementById("compraFinalizada")
 
 abrirCarrito.addEventListener('click', ()=>{
     carrito.classList.toggle('carrito-abierto')
@@ -178,6 +179,7 @@ cerrarCarrito.addEventListener('click', ()=>{
 })
 
 let registroDeOrden=[]
+let registroDatosClient=[]
 let eleccion
 
 const menuCard= document.getElementsByClassName('menu-card')
@@ -195,6 +197,107 @@ const borrador= (item, registro)=>{
         notificacion.innerText=registroDeOrden.length
     }) 
 }
+
+class cliente {
+    constructor (direccion, numero){
+        this.direccion=direccion
+        this.numero=numero
+    }
+}
+
+finalCompra.addEventListener('click', ()=>{
+    Swal.fire({
+        title: "Desea confirmar su orden?",
+        showDenyButton: false,
+        showCancelButton: true,
+        confirmButtonText: "Confirmar!",
+        denyButtonText: `Don't save`,
+        cancelButtonText: "Cancelar",
+        color:'#FF6624',
+        background:'#E2EE79',
+        confirmButtonColor: "#72BB53",
+        cancelButtonColor: "rgb(229, 0, 0)",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Ingresa tu direccion de entrega",
+            input: "text",
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: "Confirmar!",
+            denyButtonText: `Don't save`,
+            cancelButtonText: "Cancelar Orden",
+            color:'#FF6624',
+            background:'#E2EE79',
+            confirmButtonColor: "#72BB53",
+            cancelButtonColor: "rgb(229, 0, 0)",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire({
+                title: "Ingresa tu numero de contacto",
+                input: "number",
+                showDenyButton: false,
+                showCancelButton: true,
+                confirmButtonText: "Confirmar!",
+                denyButtonText: `Don't save`,
+                cancelButtonText: "Cancelar Orden",
+                color:'#FF6624',
+                background:'#E2EE79',
+                confirmButtonColor: "#72BB53",
+                cancelButtonColor: "rgb(229, 0, 0)",
+              }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Escoge una forma de pago",
+                        showDenyButton: true,
+                        confirmButtonText: "Efectivo",
+                        denyButtonText: `Credito`,
+                        color:'#FF6624',
+                        background:'#E2EE79',
+                        confirmButtonColor: "#72BB53",
+                        denyButtonColor: "#FF6624",
+                      }).then((result) => {
+                        if (result.isConfirmed) {
+                            Swal.fire({
+                                text: "Tu orden ha sido procesada! Nos contactaremos contigo al momento de la entrega.",
+                                showConfirmButton: false,
+                                color:'#FF6624',
+                                icon: "success",
+                                background:'#E2EE79',
+                                iconColor:'#FF6624',
+                            })
+                        } else if (result.isDenied) {
+                            Swal.fire({
+                                text: "Tu orden ha sido procesada! Nos contactaremos contigo al momento de la entrega.",
+                                showConfirmButton: false,
+                                color:'#FF6624',
+                                icon: "success",
+                                background:'#E2EE79',
+                                iconColor:'#FF6624',
+                            });
+                        }
+                      })
+                } else if (result.isDenied) {
+                  Swal.fire("Volver a menu", "", "info");
+                }
+              })
+            } else if (result.isDenied) {
+              Swal.fire("Volver a menu", "", "info");
+            }
+          })
+        } else if (result.isDenied) {
+          Swal.fire("Volver a menu", "", "info");
+        }
+      })
+})
+/*Swal.fire({
+    text: "Tu orden ha sido procesada! Nos contactaremos contigo al momento de la entrega.",
+    showConfirmButton: false,
+    color:'#FF6624',
+    icon: "success",
+    background:'#E2EE79',
+    iconColor:'#FF6624',
+});*/
 //---------------------------------------------------------SIMULADOR API EN MENU----------------------------------------------------
 const divTitulo= document.getElementsByClassName("card-text")
 
@@ -336,7 +439,10 @@ const clasificador=(seccion, comida)=>{
         position:'top-end',
         background:'#E2EE79',
         iconColor:'#FF6624',
-      });
+        timer: 2000,
+        timerProgressBar: true,
+});
+      
     /*const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
     const coincidencia= registroDeOrden.find(ele=> ele.nombre===eleccionMenu.nombre)
     if(coincidencia){

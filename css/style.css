@@ -65,6 +65,7 @@ header .carrito-abierto div ul li {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
   font-size: x-large;
   color: #FEFB64;
+  transition: 0.5s;
 }
 header .carrito-abierto div ul .total {
   display: flex;
@@ -109,7 +110,7 @@ header .carrito-abierto div .compraFinalizada {
   transition: 0.5s;
 }
 header .carrito-abierto div :hover {
-  font-size: large;
+  font-size: x-large;
 }
 header nav {
   display: flex;
@@ -1403,13 +1404,17 @@ footer .redes-credito div .fa-brands {
   header .carrito-abierto div {
     padding: 10px;
   }
-  header .carrito-abierto div h2 {
-    font-size: larger;
-  }
   header .carrito-abierto div button .fa-regular {
     font-size: 25px;
   }
   header .carrito-abierto div ul li {
+    font-size: large;
+  }
+  header .carrito-abierto div .compraFinalizada {
+    font-size: large;
+    transition: 0.5s;
+  }
+  header .carrito-abierto div :hover {
     font-size: larger;
   }
   header nav ul a li {

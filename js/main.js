@@ -248,7 +248,7 @@ finalCompra.addEventListener('click', ()=>{
               }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
-                        title: "Escoge una forma de pago",
+                        title: "El total a cancelar es de "+ total +"$."+" Escoge una forma de pago",
                         showDenyButton: true,
                         confirmButtonText: "Efectivo",
                         denyButtonText: `Credito`,

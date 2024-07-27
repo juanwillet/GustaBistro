@@ -198,13 +198,6 @@ const borrador= (item, registro)=>{
     }) 
 }
 
-class cliente {
-    constructor (direccion, numero){
-        this.direccion=direccion
-        this.numero=numero
-    }
-}
-
 finalCompra.addEventListener('click', ()=>{
     Swal.fire({
         title: "Desea confirmar su orden?",
@@ -290,14 +283,6 @@ finalCompra.addEventListener('click', ()=>{
         }
       })
 })
-/*Swal.fire({
-    text: "Tu orden ha sido procesada! Nos contactaremos contigo al momento de la entrega.",
-    showConfirmButton: false,
-    color:'#FF6624',
-    icon: "success",
-    background:'#E2EE79',
-    iconColor:'#FF6624',
-});*/
 //---------------------------------------------------------SIMULADOR API EN MENU----------------------------------------------------
 const divTitulo= document.getElementsByClassName("card-text")
 
@@ -313,6 +298,7 @@ const resp= await fetch(url)
 const data= await resp.json()
 armadorMenu(data, comida, numero)
 }
+
 recopiladorData("./data.json","Gustaburguer","0")
 recopiladorData("./data.json","Sweet Bacon Burguer","1")
 recopiladorData("./data.json","Gusta Chicken Salad","2")
@@ -421,7 +407,6 @@ const clasificador=(seccion, comida)=>{
     const pedido= document.createElement('li')
     pedido.innerHTML= datosEleccion 
     listaPedidos.appendChild(pedido)
-    //pedido.classList.toggle('gusta')
     localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
     borrador(pedido, eleccionMenu)  
     suma.innerHTML=sumadora(eleccionMenu.precio)
@@ -442,29 +427,7 @@ const clasificador=(seccion, comida)=>{
         timer: 2000,
         timerProgressBar: true,
 });
-      
-    /*const eleccionMenu= seccion.find(ele=> ele.nombre.includes(comida))
-    const coincidencia= registroDeOrden.find(ele=> ele.nombre===eleccionMenu.nombre)
-    if(coincidencia){
 
-    suma.innerHTML=sumadora(eleccionMenu.precio)
-    }
-    else{
-     const datosEleccion= eleccionMenu.nombre+" "+eleccionMenu.precio+"$"
-    eleccion=eleccionMenu
-    registroDeOrden.push(eleccion)
-    const pedido= document.createElement('li')
-    pedido.innerHTML= datosEleccion 
-    listaPedidos.appendChild(pedido)
-    //pedido.classList('gusta')
-    localStorage.setItem('guardado', JSON.stringify(registroDeOrden))
-    borrador(pedido, eleccionMenu)  
-    suma.innerHTML=sumadora(eleccionMenu.precio)
-    notificacion.innerText=registroDeOrden.length
-    if(registroDeOrden.length==0){
-        notificacion.innerText=registroDeOrden.length
-    }
-    }*/
 }
 const burguerGusta= menuCard[0].addEventListener('click', ()=>{
 clasificador(hamburguesas, 'Gusta burguer')
